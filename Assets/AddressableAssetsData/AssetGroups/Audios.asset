@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Audios
+  m_EditorClassIdentifier: 
+  m_GroupName: Audios
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fa38bc921f315024d88ca46c540d7548
+  m_SerializeEntries:
+  - m_GUID: 134dd70190bf6864ea1e225b25d15347
+    m_Address: "Assets/Game/Common/Commend/Audios/\u6B53\u58F0.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 7c17898fa483705468cc3c8dacaad1c4
+    m_Address: "Assets/Game/Common/Commend/Audios/\u5A01\u98A8\u5802\u3005.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: dffaf73c2e467db468919b7a40911146
+    m_Address: "Assets/Game/Common/Commend/Audios/\u898B\u3088\u3001\u52C7\u8005\u306F\u5E30\u308B.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 4832fe1ee69b84c44a81aa599ae836f4
+    m_Address: "Assets/Game/Common/Commend/Audios/\u30BF\u30F3\u30DB\u30A4\u30B6\u30FC\u3068\u30A2\u30A4\u30FC\u30C0\u30E1\u30C9\u30EC\u30FC.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 551ba48dc0b26a54b86d68f7ffb672d1
+    m_Address: "Assets/Game/Common/Commend/Audios/\u62CD\u624B.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: e3b8b8d17a937664d993f6184128a07f
+    m_Address: "Assets/Game/Common/Commend/Audios/\u6307\u7B1B.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 64c38bc74b7b7614bb368b0b3cdc077d
+    m_Address: "Assets/Game/Common/Commend/Audios/\u30CF\u30EC\u30EB\u30E4.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: c3ed0844b6a898347bd91b00644aa421
+    m_Address: Assets/Game/Roulette/Audios/sfx_roulette_back.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: cab7f89994c86e94ab23d6cff5040ac5
+    m_Address: Assets/Game/Roulette/Audios/sfx_roulette_game_decelerating.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: f34532dc56bb0a3478c4d3fe01c3d84a
+    m_Address: Assets/Game/Roulette/Audios/sfx_roulette_game_rotating.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 0a2196bba1ff6034b9927dfb6cac43a6
+    m_Address: Assets/Game/Roulette/Audios/bgm_roulette_loop.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 9a521da133e3fbe4d94ce188d13d1194
+    m_Address: Assets/Game/Roulette/Audios/sfx_roulette_confirm.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 3d04672c53227314ba61fcefc49fcdb5
+    m_Address: Assets/Game/Roulette/Audios/sfx_roulette_select.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 1fa5b2096ea86fb4cb3ed408e0ca9bc6
+    m_Address: Assets/Game/Janken/Spine/King/mc/01_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: dfe4fd46c0968c846a7169f672e0399b
+    m_Address: Assets/Game/Janken/Spine/King/mc/02_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 8ec0a83430e5cb148ba772f359fc7b7c
+    m_Address: Assets/Game/Janken/Spine/King/mc/03_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 07fa38bf24eb3814c86260ea8481c6e7
+    m_Address: Assets/Game/Janken/Spine/King/mc/04_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 2617ed62472d2f54698aee2f70d383c4
+    m_Address: Assets/Game/Janken/Spine/King/mc/05_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 73a30b66f6e3cb04da5ac2d26400f5c0
+    m_Address: Assets/Game/Janken/Spine/King/mc/06_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 4c65f2a9c77a3174fb305d204d29104e
+    m_Address: Assets/Game/Janken/Spine/King/mc/07_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: e11cbe677d8e8374c9f3c78d0866dd6c
+    m_Address: Assets/Game/Janken/Spine/King/mc/08_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 10c4ac4680ff3db44a42a18cfd5f9305
+    m_Address: Assets/Game/Janken/Spine/King/mc/09_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 313951c588640b5468f257a095e179b0
+    m_Address: Assets/Game/Janken/Spine/King/mc/10_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 78dcd8bb069e4e94fb90614d6bb38c49
+    m_Address: Assets/Game/Janken/Spine/King/mc/11_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 61eef759de5015b44a3185de6d02516b
+    m_Address: Assets/Game/Janken/Spine/King/mc/12_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 96fd7f4fee78f0440bfc59678b14db66
+    m_Address: Assets/Game/Janken/Spine/King/mc/13_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 54eda618b6789cd4398ad2ebad0656eb
+    m_Address: Assets/Game/Janken/Spine/King/mc/14_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 73d337ea82121264696ac0b7340b5953
+    m_Address: Assets/Game/Janken/Spine/King/mc/15_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 0cc155b6ad378f04097775c7883d4f42
+    m_Address: Assets/Game/Janken/Spine/King/mc/16_king.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: a56766e62a3675946a29c8bce6726589
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/01_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: d7301700d8f5e46458a014cfd0c1cbfb
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/02_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 573ac7b747a61444a8706e6b269aa76b
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/03_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 85d1db0bbcc4d464ba6daa18a8a464a2
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/04_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: d514c2ad2ded4ae41952113587a2ae63
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/05_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 6ec8ad28b2728c24dad3999479c55d61
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/06_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 7da41836bdb921c4fafaf54965e6505f
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/07_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 5f7bcb92716e027438f4026d0eca8908
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/08_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 34a13120fd43b9f4cac190ea1e67a81b
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/09_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: d1fa206d44e4fdf45ba3227d3700482e
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/10_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: a5c3d6e688a0af3418eb0bd90f9b1ec8
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/11_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 7db816d18ee32554d8e41f4349eb7170
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/12_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: e9dd305699d37c64589aa154ac0b652f
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/13_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 4977eac578505f24989b2eff7a027c9f
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/14_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: b17c065b22609344a942c3544960e8a2
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/15_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: f0308c5391f99f14b99512ff5b31569f
+    m_Address: Assets/Game/Janken/Spine/Queen/mc/16_queen.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f9d83a9dd8da1bc44a0fdec9f5ae85a2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0e5b27fefae10ca41917cc8d954f3c46, type: 2}
+    - {fileID: 11400000, guid: 3b2660e5952cb0345b50428934fca570, type: 2}

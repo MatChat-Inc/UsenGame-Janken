@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Widgets
+  m_EditorClassIdentifier: 
+  m_GroupName: Widgets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d8b50c44441e95347b311dd5d4c4ced4
+  m_SerializeEntries:
+  - m_GUID: 47a110af9f5ede448896933caa6a6fc1
+    m_Address: USEN.Games.Common.AppInfoView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Common
+  - m_GUID: 5d347ec6cc10e794fbfa93fb6c9f4720
+    m_Address: USEN.Games.Common.CommendView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Common
+  - m_GUID: 0fed4de471319e7478fc81fb1ddc3a3d
+    m_Address: USEN.Games.Common.PopupOptionsView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Common
+  - m_GUID: ab08e89e0bc37cb4aa62934ce7221b32
+    m_Address: USEN.Games.Roulette.RouletteCategoryList
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: d40d509746a3deb4d9f3f86e3d97d4c6
+    m_Address: USEN.Games.Roulette.RouletteCategoryView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: 96b874bb70f59b04ba2d70862ad0bf4b
+    m_Address: USEN.Games.Roulette.RouletteContentList
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: 1e337da079c70e54a948a7271715ab8e
+    m_Address: USEN.Games.Roulette.RouletteEditView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: 98b9f96af753ec348ad19380f4bcfa41
+    m_Address: USEN.Games.Roulette.RouletteGameSelectionList
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: 986660a2fbfab4e4f8315f171677a1e2
+    m_Address: USEN.Games.Roulette.RouletteGameSelectionView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: 32634e36cb4371e43b2d989e9e1083ec
+    m_Address: USEN.Games.Roulette.RouletteGameView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: 7b91dacf70a8a0a4297372b9acb20d75
+    m_Address: USEN.Games.Roulette.RouletteSettingsView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: e0fe98d95d495be4a9acc931e4bbae7a
+    m_Address: USEN.Games.Roulette.RouletteStartView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Roulette
+  - m_GUID: e9f753ffc4190d64fa826de54f74bd00
+    m_Address: USEN.Games.Janken.YamanoteCategoryView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: a52b92806af03c1479ac7cec98d0704a
+    m_Address: USEN.Games.Janken.YamanoteGameOverView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: d182b6367976172498f0bf2c66c1786e
+    m_Address: USEN.Games.Janken.YamanoteGameView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: e67841950b12f1f49b6879df5fb194a5
+    m_Address: USEN.Games.Janken.JankenHomeView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: 47114499b18805d4bb6384247a2a6f8c
+    m_Address: USEN.Games.Janken.YamanotePunishmentGameView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: 16a70a556f786f3409ebfce6c4694e91
+    m_Address: USEN.Games.Janken.YamanotePunishmentList
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: a0dc3580871ae684d816b6e32c44df85
+    m_Address: USEN.Games.Janken.YamanoteQuestionEditView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: 18cfab7c382d549489bbe769d2bb47f0
+    m_Address: USEN.Games.Janken.YamanoteQuestionsView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: 9aac0533281a92747998c1196e054abc
+    m_Address: USEN.Games.Janken.JankenSettingsView
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Janken
+  - m_GUID: aabacd6beb79a644786614295621789a
+    m_Address: global.StatefulWidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+  - m_GUID: cab492afe31353d4aa721c22d4ca32ed
+    m_Address: global.StatefulWidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+  - m_GUID: c3dc8e32bc0cb3b4c83d876e18ae0fc6
+    m_Address: global.WidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+  - m_GUID: 2967fa821446f1549be2f712e2567646
+    m_Address: global.WidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f9d83a9dd8da1bc44a0fdec9f5ae85a2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bd21edc528c7c7a49a9d8c597e63a7e4, type: 2}
+    - {fileID: 11400000, guid: 2c73a3e79bc12854f89b7f4706590e5f, type: 2}
