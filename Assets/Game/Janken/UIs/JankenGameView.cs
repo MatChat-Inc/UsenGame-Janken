@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using Luna;
 using Luna.UI;
 using Luna.UI.Navigation;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -15,18 +16,28 @@ namespace USEN.Games.Janken
 {
     public class JankenGameView : Widget
     {
-        public Button startButton;
+        public TextMeshProUGUI confirmText;
         public BottomPanel bottomPanel;
         
-        public Animator spineAnimator;
+        public JankenCharacterController characterController;
         
         public Sprite rouletteBackground;
 
         private void Start()
         {
-            startButton.onClick.AddListener(OnStartButtonClicked);
-            
-            EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+            characterController.OnStateChange += (state) =>
+            {
+                switch (state)
+                {
+                    case JankenCharacterController.JankenCharacterState.Idle:
+                        bottomPanel.confirmButton.gameObject.SetActive(true);
+                        HideControlButtons();
+                        break;
+                    case JankenCharacterController.JankenCharacterState.End:
+                        ShowControlButtons();
+                        break;
+                }
+            };
         }
         
         private void Update()
@@ -34,13 +45,15 @@ namespace USEN.Games.Janken
             if (Input.GetKeyDown(KeyCode.Escape) ||
                 Input.GetButtonDown("Cancel")) {
                 OnExitButtonClicked();
+            } else if (Input.GetKeyDown(KeyCode.Return) ||
+                       Input.GetButtonDown("Submit")) {
+                OnConfirmButtonClicked();
             }
         }
 
         private void OnEnable()
         {
             bottomPanel.onExitButtonClicked += OnExitButtonClicked;
-            bottomPanel.onSelectButtonClicked += OnStartButtonClicked;
             bottomPanel.onConfirmButtonClicked += OnConfirmButtonClicked;
             bottomPanel.onRedButtonClicked += OnRedButtonClicked;
             bottomPanel.onBlueButtonClicked += OnBlueButtonClicked;
@@ -51,7 +64,6 @@ namespace USEN.Games.Janken
         private void OnDisable()
         {
             bottomPanel.onExitButtonClicked -= OnExitButtonClicked;
-            bottomPanel.onSelectButtonClicked -= OnStartButtonClicked;
             bottomPanel.onConfirmButtonClicked -= OnConfirmButtonClicked;
             bottomPanel.onRedButtonClicked -= OnRedButtonClicked;
             bottomPanel.onBlueButtonClicked -= OnBlueButtonClicked;
@@ -59,14 +71,6 @@ namespace USEN.Games.Janken
             bottomPanel.onYellowButtonClicked -= OnYellowButtonClicked;
         }
 
-        public async void OnStartButtonClicked()
-        {
-            startButton.gameObject.SetActive(false);
-            
-            // await PickNextRandomQuestion();
-            ShowControlButtons();
-        } 
-        
         private void OnExitButtonClicked()
         {
             PopupConfirmView();
@@ -74,7 +78,14 @@ namespace USEN.Games.Janken
 
         private void OnConfirmButtonClicked()
         {
-            
+            switch (characterController.State)
+            {
+                case JankenCharacterController.JankenCharacterState.Idle:
+                    characterController.StartJanken();
+                    bottomPanel.confirmButton.gameObject.SetActive(false);
+                    confirmText.text = "もう一度じゃんけんをする";
+                    break;
+            }
         }
 
         private void OnRedButtonClicked()
@@ -109,10 +120,16 @@ namespace USEN.Games.Janken
         
         private void ShowControlButtons()
         {
-            bottomPanel.blueButton.gameObject.SetActive(true);
             bottomPanel.redButton.gameObject.SetActive(true);
             bottomPanel.greenButton.gameObject.SetActive(true);
             bottomPanel.yellowButton.gameObject.SetActive(true);
+        }
+        
+        private void HideControlButtons()
+        {
+            bottomPanel.redButton.gameObject.SetActive(false);
+            bottomPanel.greenButton.gameObject.SetActive(false);
+            bottomPanel.yellowButton.gameObject.SetActive(false);
         }
         
         private void PopupConfirmView()

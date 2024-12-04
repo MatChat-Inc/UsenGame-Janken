@@ -95,12 +95,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - UI
     - USEN.Games.Janken
-  - m_GUID: a52b92806af03c1479ac7cec98d0704a
-    m_Address: USEN.Games.Janken.YamanoteGameOverView
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - UI
-    - USEN.Games.Janken
   - m_GUID: d182b6367976172498f0bf2c66c1786e
     m_Address: USEN.Games.Janken.YamanoteGameView
     m_ReadOnly: 0
@@ -109,30 +103,6 @@ MonoBehaviour:
     - USEN.Games.Janken
   - m_GUID: e67841950b12f1f49b6879df5fb194a5
     m_Address: USEN.Games.Janken.JankenHomeView
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - UI
-    - USEN.Games.Janken
-  - m_GUID: 47114499b18805d4bb6384247a2a6f8c
-    m_Address: USEN.Games.Janken.YamanotePunishmentGameView
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - UI
-    - USEN.Games.Janken
-  - m_GUID: 16a70a556f786f3409ebfce6c4694e91
-    m_Address: USEN.Games.Janken.YamanotePunishmentList
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - UI
-    - USEN.Games.Janken
-  - m_GUID: a0dc3580871ae684d816b6e32c44df85
-    m_Address: USEN.Games.Janken.YamanoteQuestionEditView
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - UI
-    - USEN.Games.Janken
-  - m_GUID: 18cfab7c382d549489bbe769d2bb47f0
-    m_Address: USEN.Games.Janken.YamanoteQuestionsView
     m_ReadOnly: 0
     m_SerializedLabels:
     - UI

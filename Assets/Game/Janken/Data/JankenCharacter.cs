@@ -14,8 +14,9 @@ namespace USEN.Games.Janken
         [PreviewField(Alignment = ObjectFieldAlignment.Center)] 
         public Sprite avatar;
         [TableColumnWidth(150, Resizable = true)]
-        [VerticalGroup("Data"), LabelWidth(60)] public string name = "";
-        [VerticalGroup("Data"), LabelWidth(60)] public SkeletonDataAsset skeleton;
-        [VerticalGroup("Data"), LabelWidth(60)] public AnimatorController animator;
+        [VerticalGroup("Data"), LabelWidth(80)] public string name = "";
+        [VerticalGroup("Data"), LabelWidth(80)] public SkeletonDataAsset skeleton;
+        [VerticalGroup("Data"), LabelWidth(80)] public AnimatorController animator;
+        [VerticalGroup("Data"), LabelWidth(80)] public AudioClip helloVoice;
     }
 }

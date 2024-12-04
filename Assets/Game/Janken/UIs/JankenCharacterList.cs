@@ -62,6 +62,7 @@ namespace USEN.Games.Janken
             skeletonMecanim.skeletonDataAsset = listViewCell.Data.skeleton;
             skeletonMecanim.Initialize(true);
             animator.runtimeAnimatorController = listViewCell.Data.animator;
+            SFXManager.Play(listViewCell.Data.helloVoice);
         }
     }
 
