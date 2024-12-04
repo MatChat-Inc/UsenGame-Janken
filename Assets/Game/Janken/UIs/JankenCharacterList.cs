@@ -1,5 +1,6 @@
 using Luna;
 using Luna.UI;
+using Luna.UI.Navigation;
 using Sirenix.Utilities;
 using Spine;
 using Spine.Unity;
@@ -48,9 +49,20 @@ namespace USEN.Games.Janken
 
         private void OnCellClickOrSubmit(int index, FixedListViewCell<JankenCharacter> listViewCell)
         {
-            var categoryCell = (JankenCharacterListCell)listViewCell;
+            JankenPreferences.SelectedCharacter = SelectedIndex;
+            Navigator.Pop();
+        }
+
+        protected override void OnCellClicked(int index, JankenCharacterListCell listViewCell)
+        {
+            OnCellClickOrSubmit(index, listViewCell);
         }
         
+        protected override void OnCellSubmitted(int index, JankenCharacterListCell listViewCell)
+        {
+            OnCellClickOrSubmit(index, listViewCell);
+        }
+
         protected override void OnCellDeselected(int index, JankenCharacterListCell listViewCell)
         {
             listViewCell.text.color = Color.white;
@@ -59,9 +71,9 @@ namespace USEN.Games.Janken
         protected override void OnCellSelected(int index, JankenCharacterListCell listViewCell)
         {
             listViewCell.text.color = Color.black;
+            animator.runtimeAnimatorController = listViewCell.Data.animator;
             skeletonMecanim.skeletonDataAsset = listViewCell.Data.skeleton;
             skeletonMecanim.Initialize(true);
-            animator.runtimeAnimatorController = listViewCell.Data.animator;
             SFXManager.Play(listViewCell.Data.helloVoice);
         }
     }

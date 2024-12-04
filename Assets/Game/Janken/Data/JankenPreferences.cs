@@ -6,6 +6,10 @@ namespace USEN.Games.Janken
 {
     public static class JankenPreferences
     {
-        
+        public static int SelectedCharacter
+        {
+            get => PlayerPrefs.GetInt("Janken.SelectedCharacter", 0);
+            set => PlayerPrefs.SetInt("Janken.SelectedCharacter", value);
+        }
     }
 }

@@ -25,6 +25,8 @@ namespace USEN.Games.Janken
 
         private void Start()
         {
+            characterController.SwitchCharacter(JankenPreferences.SelectedCharacter);
+            
             characterController.OnStateChange += (state) =>
             {
                 switch (state)
@@ -134,7 +136,7 @@ namespace USEN.Games.Janken
         
         private void PopupConfirmView()
         {
-            Navigator.ShowModal<PopupOptionsView2>(
+            Navigator.ShowModal<PopupOptionsView>(
                 builder: (popup) =>
                 {
                     popup.onOption1 = () => Navigator.Pop();
