@@ -242,6 +242,106 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+  - m_GUID: e885484e1bc99fb47a0ac3f6bfa586b1
+    m_Address: Packages/com.esotericsoftware.spine.spine-unity-examples/Sound/Footstep.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 532e417ffa3f95747908419a00be3780
+    m_Address: Packages/com.esotericsoftware.spine.spine-unity-examples/Sound/Hardfall.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 51f0c54706b53c14c9c24bbd63bb18a6
+    m_Address: Packages/com.esotericsoftware.spine.spine-unity-examples/Sound/Jump.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: e986056f914f4974896a49527ca80041
+    m_Address: Packages/com.esotericsoftware.spine.spine-unity-examples/Sound/Spineboygun.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 1d46e1d5e0c28004b937de998e241bba
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/13_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 3911210d7ed505a4fb23dcfffa336cda
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/09_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: e0a4a42da1ca47c49b482cad9177bff8
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/07_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 27849bcc977cd8442bb4207f788a74f4
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/08_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: ecd41cefb7fcab44faa8d951eb244699
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/15_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: f052b66ae90bf7b4298e5febe4ed7a63
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/10_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 9e70f7aea378056449396d3679d40e22
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/06_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: ae0a583075d803149a0ff4b9cbd99a7d
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/03_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 60ed9973ed6ef9c4d952160c824a2ed8
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/05_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: d5be99e54594b024ba1fb754cb9012d7
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/02_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 75baf2ec467c3354caf69205dd650be3
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/14_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 83b30aa90f401314eb47b678bea691f6
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/16_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 49b413494c39b6143b0f492d2be62c2a
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/04_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: 1a56d2f04f3e59e4f87a1c112f8e3450
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/12_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: eed1b8934014e8f40a73372baea9c542
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/01_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: d4073ace87316274eb4bcfee13b75f04
+    m_Address: Assets/Game/Janken/Spine/Gal/mc/11_gal.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f9d83a9dd8da1bc44a0fdec9f5ae85a2, type: 2}
   m_SchemaSet:

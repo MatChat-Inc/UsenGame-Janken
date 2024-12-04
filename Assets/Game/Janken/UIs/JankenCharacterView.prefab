@@ -846,6 +846,7 @@ GameObject:
   - component: {fileID: 523006024471438997}
   - component: {fileID: 7132421396269683903}
   - component: {fileID: 1648458290588641939}
+  - component: {fileID: 3637011836189237568}
   m_Layer: 0
   m_Name: Spine Mecanim
   m_TagString: Untagged
@@ -980,6 +981,18 @@ MonoBehaviour:
     layerMixModes: 01000000
     layerBlendModes: 01000000
   updateTiming: 1
+--- !u!114 &3637011836189237568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4310876460236885414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c065db61d9ef46429b8a2a93a726e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4579726491412954208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,7 +1756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3467195953606923170, guid: 0c380f4697fab384e97d3c38dbb7f523, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1505
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3467195953606923170, guid: 0c380f4697fab384e97d3c38dbb7f523, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1799,7 +1812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6657245270200980943, guid: 0c380f4697fab384e97d3c38dbb7f523, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1655
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6657245270200980943, guid: 0c380f4697fab384e97d3c38dbb7f523, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1883,7 +1896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7992953217732209196, guid: 0c380f4697fab384e97d3c38dbb7f523, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1805
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7992953217732209196, guid: 0c380f4697fab384e97d3c38dbb7f523, type: 3}
       propertyPath: m_AnchoredPosition.y

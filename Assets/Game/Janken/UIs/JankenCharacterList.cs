@@ -1,8 +1,12 @@
+using Luna;
 using Luna.UI;
 using Sirenix.Utilities;
+using Spine;
 using Spine.Unity;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Event = Spine.Event;
 
 namespace USEN.Games.Janken
 {
@@ -22,7 +26,7 @@ namespace USEN.Games.Janken
             if (!jankenCharacters.characters.IsNullOrEmpty()) 
                 Data = jankenCharacters.characters;
         }
-
+        
         // protected void Start()
         // {
         //     var content = _scrollRect.content;
