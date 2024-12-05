@@ -66,7 +66,7 @@ namespace USEN.Games.Janken
         
         public void OnSettingsButtonClicked()
         {
-            Navigator.Push<RouletteSettingsView>();
+            Navigator.Push<JankenSettingsView>();
         }
         
         private void OnExitButtonClicked()

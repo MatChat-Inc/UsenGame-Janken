@@ -32,8 +32,7 @@ namespace USEN.Games.Janken
                 switch (state)
                 {
                     case JankenCharacterController.JankenCharacterState.Idle:
-                        bottomPanel.confirmButton.gameObject.SetActive(true);
-                        HideControlButtons();
+                        ResetControlButtons();
                         break;
                     case JankenCharacterController.JankenCharacterState.End:
                         ShowControlButtons();
@@ -55,6 +54,9 @@ namespace USEN.Games.Janken
 
         private void OnEnable()
         {
+            ResetControlButtons();
+            characterController.ResetState();
+            
             bottomPanel.onExitButtonClicked += OnExitButtonClicked;
             bottomPanel.onConfirmButtonClicked += OnConfirmButtonClicked;
             bottomPanel.onRedButtonClicked += OnRedButtonClicked;
@@ -132,6 +134,12 @@ namespace USEN.Games.Janken
             bottomPanel.redButton.gameObject.SetActive(false);
             bottomPanel.greenButton.gameObject.SetActive(false);
             bottomPanel.yellowButton.gameObject.SetActive(false);
+        }
+        
+        private void ResetControlButtons()
+        {
+            HideControlButtons();
+            bottomPanel.confirmButton.gameObject.SetActive(true);
         }
         
         private void PopupConfirmView()

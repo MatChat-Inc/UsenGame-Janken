@@ -64,6 +64,11 @@ public class JankenCharacterController : MonoBehaviour
         SFXManager.Play(audioClip);
     }
     
+    public void ResetState()
+    {
+        State = JankenCharacterState.Idle;
+    }
+    
     private void OnStateBehaviourOnOnAnimationStartEvent(AnimationStateBehaviour behaviour, Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         var state = State;

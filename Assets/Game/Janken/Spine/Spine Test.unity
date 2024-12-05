@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 1189967569}
   - component: {fileID: 1189967568}
   - component: {fileID: 1189967567}
+  - component: {fileID: 1189967572}
   m_Layer: 0
   m_Name: Spine Mecanim GameObject (King)
   m_TagString: Untagged
@@ -385,6 +386,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1189967572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189967566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc3759deef3a5e4cb8ffc9a0f5b85f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1644749102
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +411,7 @@ GameObject:
   - component: {fileID: 1644749105}
   - component: {fileID: 1644749104}
   - component: {fileID: 1644749103}
+  - component: {fileID: 1644749108}
   m_Layer: 0
   m_Name: Spine Mecanim GameObject (Gal)
   m_TagString: Untagged
@@ -532,6 +546,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644749108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644749102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc3759deef3a5e4cb8ffc9a0f5b85f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2027894266
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +571,7 @@ GameObject:
   - component: {fileID: 2027894269}
   - component: {fileID: 2027894268}
   - component: {fileID: 2027894267}
+  - component: {fileID: 2027894272}
   m_Layer: 0
   m_Name: Spine Mecanim GameObject (Macho)
   m_TagString: Untagged
@@ -679,6 +706,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2027894272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027894266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc3759deef3a5e4cb8ffc9a0f5b85f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2032301886
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +849,7 @@ GameObject:
   - component: {fileID: 2086092823}
   - component: {fileID: 2086092822}
   - component: {fileID: 2086092821}
+  - component: {fileID: 2086092826}
   m_Layer: 0
   m_Name: Spine Mecanim GameObject (Queen)
   m_TagString: Untagged
@@ -944,3 +984,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086092826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086092820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc3759deef3a5e4cb8ffc9a0f5b85f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -80,6 +80,8 @@ public class OuterGlowButton : Button
     {
         if (outerGlow == null) return;
         
+        DOTween.Kill(outerGlow);
+        
         _isGlowing = true;
         
         outerGlow.enabled = true;
@@ -90,7 +92,8 @@ public class OuterGlowButton : Button
                     x => outerGlow.Color = x, 
                     outerGlow.Color.WithA(1), 
                     outglowDuration)
-                .SetEase(Ease.InOutSine);
+                .SetEase(Ease.InOutSine)
+                .SetId(outerGlow);
         else outerGlow.Color = outerGlow.Color.WithA(1);
     }
     
@@ -107,7 +110,8 @@ public class OuterGlowButton : Button
                     outerGlow.Color.WithA(0), 
                     outglowDuration)
                 .SetEase(Ease.InOutSine)
-                .OnComplete(() => outerGlow.enabled = false);
+                .OnComplete(() => outerGlow.enabled = false)
+                .SetId(outerGlow);
         else outerGlow.Color = outerGlow.Color.WithA(0);
     }
     

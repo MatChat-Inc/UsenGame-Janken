@@ -592,7 +592,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startButton: {fileID: 2007290121}
   settingsButton: {fileID: 4750067799388164558}
-  trainImage: {fileID: 0}
   bottomPanel: {fileID: 7994328427593190427}
   categoriesJson: {fileID: 4900000, guid: 664dcc3c71fb3eb4a9e4dd291dfeb7f6, type: 3}
 --- !u!225 &5449331590822972920

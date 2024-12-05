@@ -2,7 +2,6 @@
 using System;
 using Sirenix.OdinInspector;
 using Spine.Unity;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace USEN.Games.Janken
@@ -16,7 +15,7 @@ namespace USEN.Games.Janken
         [TableColumnWidth(150, Resizable = true)]
         [VerticalGroup("Data"), LabelWidth(80)] public string name = "";
         [VerticalGroup("Data"), LabelWidth(80)] public SkeletonDataAsset skeleton;
-        [VerticalGroup("Data"), LabelWidth(80)] public AnimatorController animator;
+        [VerticalGroup("Data"), LabelWidth(80)] public RuntimeAnimatorController animator;
         [VerticalGroup("Data"), LabelWidth(80)] public AudioClip helloVoice;
     }
 }

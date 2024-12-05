@@ -1,13 +1,9 @@
-using Luna;
 using Luna.UI;
 using Luna.UI.Navigation;
 using Sirenix.Utilities;
-using Spine;
 using Spine.Unity;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Event = Spine.Event;
 
 namespace USEN.Games.Janken
 {
@@ -74,7 +70,6 @@ namespace USEN.Games.Janken
             animator.runtimeAnimatorController = listViewCell.Data.animator;
             skeletonMecanim.skeletonDataAsset = listViewCell.Data.skeleton;
             skeletonMecanim.Initialize(true);
-            SFXManager.Play(listViewCell.Data.helloVoice);
         }
     }
 
