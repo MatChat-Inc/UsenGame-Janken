@@ -4,6 +4,7 @@ using Luna.UI.Navigation;
 using Spine.Unity;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace USEN.Games.Janken
@@ -11,7 +12,8 @@ namespace USEN.Games.Janken
     public class JankenCharacterListCell : FixedListViewCell<JankenCharacter>
     {
         public Image avatar;
-        public TextMeshProUGUI text;
+        public Image nameImage;
+        public TextMeshProUGUI nameText;
 
         public override JankenCharacter Data
         {
@@ -19,9 +21,11 @@ namespace USEN.Games.Janken
             set
             {
                 data = value;
-                text.text = value.name;
+                nameText.text = value.name;
                 if (avatar != null)
                     avatar.sprite = value.avatar;
+                if (nameImage != null)
+                    nameImage.sprite = value.NameSprite;
             }
         }
 
@@ -33,12 +37,12 @@ namespace USEN.Games.Janken
         
         private void OnSelected(int arg1, FixedListViewCell<JankenCharacter> arg2)
         {
-            text.color = Color.HSVToRGB(148f / 360, 0.9f, 0.6f);
+            nameText.color = Color.HSVToRGB(148f / 360, 0.9f, 0.6f);
         }
     
         private void OnDeselected(int arg1, FixedListViewCell<JankenCharacter> arg2)
         {
-            text.color = Color.black;
+            nameText.color = Color.black;
         }
 
         // protected async void OnValidate()

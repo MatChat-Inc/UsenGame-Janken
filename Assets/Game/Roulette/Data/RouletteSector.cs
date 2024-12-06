@@ -14,7 +14,7 @@ namespace USEN.Games.Roulette
         public float weight = 1;
         [JsonIgnore] public Color color;
         
-        // [JsonProperty("color"), JsonConverter(typeof(ColorArgbConverter))] 
+        [JsonProperty("color"), JsonConverter(typeof(ColorArgbConverter))] 
         public System.Drawing.Color scolor;
         
         public RouletteSector() {}

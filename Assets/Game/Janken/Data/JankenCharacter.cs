@@ -14,6 +14,7 @@ namespace USEN.Games.Janken
         public Sprite avatar;
         [TableColumnWidth(150, Resizable = true)]
         [VerticalGroup("Data"), LabelWidth(80)] public string name = "";
+        [VerticalGroup("Data"), LabelWidth(80)] public Sprite NameSprite;
         [VerticalGroup("Data"), LabelWidth(80)] public SkeletonDataAsset skeleton;
         [VerticalGroup("Data"), LabelWidth(80)] public RuntimeAnimatorController animator;
         [VerticalGroup("Data"), LabelWidth(80)] public AudioClip helloVoice;

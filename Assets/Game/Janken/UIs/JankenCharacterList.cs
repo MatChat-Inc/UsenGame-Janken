@@ -10,7 +10,7 @@ namespace USEN.Games.Janken
     
     public class JankenCharacterList : FixedListView<JankenCharacterListCell, JankenCharacter>, IEventSystemHandler
     {
-        public JankenCharacters jankenCharacters;
+        // public JankenCharacters jankenCharacters;
         public SkeletonMecanim skeletonMecanim;
         public Animator animator;
         
@@ -20,8 +20,9 @@ namespace USEN.Games.Janken
         {
             base.Awake();
             
-            if (!jankenCharacters.characters.IsNullOrEmpty()) 
-                Data = jankenCharacters.characters;
+            var characters = JankenCharacters.Default?.characters;
+            if (!characters.IsNullOrEmpty()) 
+                Data = characters;
         }
         
         // protected void Start()
@@ -61,12 +62,12 @@ namespace USEN.Games.Janken
 
         protected override void OnCellDeselected(int index, JankenCharacterListCell listViewCell)
         {
-            listViewCell.text.color = Color.white;
+            listViewCell.nameText.color = Color.white;
         }
 
         protected override void OnCellSelected(int index, JankenCharacterListCell listViewCell)
         {
-            listViewCell.text.color = Color.black;
+            listViewCell.nameText.color = Color.black;
             animator.runtimeAnimatorController = listViewCell.Data.animator;
             skeletonMecanim.skeletonDataAsset = listViewCell.Data.skeleton;
             skeletonMecanim.Initialize(true);
