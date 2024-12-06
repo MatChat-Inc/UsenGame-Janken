@@ -39,6 +39,7 @@ namespace USEN.Games.Janken
         private void OnEnable()
         {
             // Network request
+            RouletteManager.Instance.Sync();
             API.GetRandomSetting().ContinueWith(task => {
                 RoulettePreferences.DisplayMode = (RouletteDisplayMode) task.Result.random;
             }, TaskScheduler.FromCurrentSynchronizationContext());
