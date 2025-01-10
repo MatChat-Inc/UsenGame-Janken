@@ -792,7 +792,7 @@ AnimationClip:
   - time: 0.23333335
     functionName: Play
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 60ed9973ed6ef9c4d952160c824a2ed8, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 49b413494c39b6143b0f492d2be62c2a, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1292,7 +1292,7 @@ AnimationClip:
   - time: 0.23333335
     functionName: Play
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 9e70f7aea378056449396d3679d40e22, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 60ed9973ed6ef9c4d952160c824a2ed8, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2971,7 +2971,7 @@ AnimationClip:
   - time: 0.23333335
     functionName: Play
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 49b413494c39b6143b0f492d2be62c2a, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 9e70f7aea378056449396d3679d40e22, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
