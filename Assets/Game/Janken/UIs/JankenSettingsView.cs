@@ -39,15 +39,15 @@ namespace USEN.Games.Janken
             
             // Commendation video settings
             commendationVideoSettingsSlider.onValueChanged.AddListener(OnCommendationVideoSettingsSliderValueChanged);
-            commendationVideoSettingsSlider.value = RoulettePreferences.CommendationVideoOption;
-            commendationVideoSettingsToggles.ToggleOn(RoulettePreferences.CommendationVideoOption);
+            commendationVideoSettingsSlider.value = JankenPreferences.CommendationVideoOption;
+            commendationVideoSettingsToggles.ToggleOn(JankenPreferences.CommendationVideoOption);
             
             // Audio volume
-            bgmVolumeText.text = $"{RoulettePreferences.BgmVolume * 100:0}";
+            bgmVolumeText.text = $"{JankenPreferences.BgmVolume * 100:0}";
             bgmVolumeSlider.value = BgmManager.Volume * 10;
             bgmVolumeSlider.onValueChanged.AddListener(OnBgmVolumeChanged);
             
-            sfxVolumeText.text = $"{RoulettePreferences.SfxVolume * 100:0}";
+            sfxVolumeText.text = $"{JankenPreferences.SfxVolume * 100:0}";
             sfxVolumeSlider.value = SFXManager.Volume * 10;
             sfxVolumeSlider.onValueChanged.AddListener(OnSfxVolumeChanged);
             
@@ -77,20 +77,20 @@ namespace USEN.Games.Janken
         
         private void OnCommendationVideoSettingsSliderValueChanged(float arg0)
         {
-            RoulettePreferences.CommendationVideoOption = Convert.ToInt32(arg0);
+            JankenPreferences.CommendationVideoOption = Convert.ToInt32(arg0);
         }
         
         private void OnBgmVolumeChanged(float value)
         {
             BgmManager.SetVolume(value * 0.1f);
-            RoulettePreferences.BgmVolume = value * 0.1f;
+            JankenPreferences.BgmVolume = value * 0.1f;
             bgmVolumeText.text = $"{value * 10:0}";
         }
         
         private void OnSfxVolumeChanged(float value)
         {
             SFXManager.SetVolume(value * 0.1f);
-            RoulettePreferences.SfxVolume = value * 0.1f;
+            JankenPreferences.SfxVolume = value * 0.1f;
             sfxVolumeText.text = $"{value * 10:0}";
             SFXManager.Play(R.Audios.SfxRouletteBack);
         }

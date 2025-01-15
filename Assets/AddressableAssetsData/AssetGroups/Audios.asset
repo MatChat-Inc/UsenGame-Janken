@@ -422,6 +422,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+  - m_GUID: 5be6c4bd18d72c841a9dc29086f9f350
+    m_Address: Assets/Game/Janken/Audios/bgm_janken_final.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+  - m_GUID: f77c33b7025cb4f4082f252feceaa6fc
+    m_Address: Assets/Game/Janken/Audios/bgm_janken.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f9d83a9dd8da1bc44a0fdec9f5ae85a2, type: 2}
   m_SchemaSet:

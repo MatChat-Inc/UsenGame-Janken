@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DG.Tweening;
+using Luna;
 using Luna.UI;
 using Luna.UI.Navigation;
 using Modules.UI.Misc;
@@ -34,6 +35,12 @@ namespace USEN.Games.Janken
             bottomPanel.exitButton.onClick.AddListener(OnExitButtonClicked);
             
             EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+            
+            // Audio volume
+            BgmManager.Volume = JankenPreferences.BgmVolume;
+            SFXManager.Volume = JankenPreferences.SfxVolume;
+            
+            BgmManager.Play(R.Audios.BgmJanken);
         }
 
         private void OnEnable()

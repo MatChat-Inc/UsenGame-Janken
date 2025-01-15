@@ -18,6 +18,8 @@ namespace R
         public static Asset<AudioClip> 指笛 => new("Assets/Game/Common/Commend/Audios/指笛.mp3");
         public static Asset<AudioClip> 歓声 => new("Assets/Game/Common/Commend/Audios/歓声.mp3");
         public static Asset<AudioClip> 見よ勇者は帰る => new("Assets/Game/Common/Commend/Audios/見よ、勇者は帰る.mp3");
+        public static Asset<AudioClip> BgmJanken => new("Assets/Game/Janken/Audios/bgm_janken.mp3");
+        public static Asset<AudioClip> BgmJankenFinal => new("Assets/Game/Janken/Audios/bgm_janken_final.mp3");
         public static Asset<AudioClip> _01Gal => new("Assets/Game/Janken/Spine/Characters/Gal/mc/01_gal.mp3");
         public static Asset<AudioClip> _02Gal => new("Assets/Game/Janken/Spine/Characters/Gal/mc/02_gal.mp3");
         public static Asset<AudioClip> _03Gal => new("Assets/Game/Janken/Spine/Characters/Gal/mc/03_gal.mp3");

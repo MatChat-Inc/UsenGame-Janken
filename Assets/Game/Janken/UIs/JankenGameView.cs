@@ -1,5 +1,6 @@
 // Created by LunarEclipse on 2024-7-21 19:44.
 
+using System;
 using Cysharp.Threading.Tasks;
 using Luna;
 using Luna.UI;
@@ -22,15 +23,22 @@ namespace USEN.Games.Janken
         public JankenCharacterController characterController;
         
         public Sprite rouletteBackground;
+        
+        private int _playTimes = 0;
+        private bool _isFinalGame = false;
 
         private void Start()
         {
-            characterController.SwitchCharacter(JankenPreferences.SelectedCharacter);
+            HideControlButtons();
             
+            characterController.SwitchCharacter(JankenPreferences.SelectedCharacter);
             characterController.OnStateChange += (state) =>
             {
                 switch (state)
                 {
+                    case JankenCharacterController.JankenCharacterState.Waiting:
+                        ++_playTimes;
+                        break; 
                     case JankenCharacterController.JankenCharacterState.Idle:
                         ResetControlButtons();
                         break;
@@ -75,6 +83,12 @@ namespace USEN.Games.Janken
             bottomPanel.onYellowButtonClicked -= OnYellowButtonClicked;
         }
 
+        private void OnDestroy()
+        {
+            if (_isFinalGame)
+                BgmManager.Play(R.Audios.BgmJanken);
+        }
+
         private void OnExitButtonClicked()
         {
             PopupConfirmView();
@@ -88,13 +102,16 @@ namespace USEN.Games.Janken
                     characterController.StartJanken();
                     bottomPanel.confirmButton.gameObject.SetActive(false);
                     confirmText.text = "もう一度じゃんけんをする";
+                    HideControlButtons();
                     break;
             }
         }
 
         private void OnRedButtonClicked()
         {
-            
+            _isFinalGame = true;
+            bottomPanel.redButton.gameObject.SetActive(false);
+            BgmManager.Play(R.Audios.BgmJankenFinal);
         }
 
         private async void OnBlueButtonClicked()
@@ -126,7 +143,8 @@ namespace USEN.Games.Janken
         
         private void ShowControlButtons()
         {
-            bottomPanel.redButton.gameObject.SetActive(true);
+            if (_playTimes >= 1) 
+                bottomPanel.redButton.gameObject.SetActive(!_isFinalGame);
             bottomPanel.greenButton.gameObject.SetActive(true);
             bottomPanel.yellowButton.gameObject.SetActive(true);
         }
@@ -140,7 +158,6 @@ namespace USEN.Games.Janken
         
         private void ResetControlButtons()
         {
-            HideControlButtons();
             bottomPanel.confirmButton.gameObject.SetActive(true);
         }
         

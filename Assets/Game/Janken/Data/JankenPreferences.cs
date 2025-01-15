@@ -11,5 +11,23 @@ namespace USEN.Games.Janken
             get => PlayerPrefs.GetInt("Janken.SelectedCharacter", 0);
             set => PlayerPrefs.SetInt("Janken.SelectedCharacter", value);
         }
+        
+        public static int CommendationVideoOption
+        {
+            get => PlayerPrefs.GetInt("Janken.CommendationVideoOption", 0);
+            set => PlayerPrefs.SetInt("Janken.CommendationVideoOption", value);
+        }
+        
+        public static float BgmVolume
+        {
+            get => PlayerPrefs.GetFloat("Janken.BgmVolume", 1);
+            set => PlayerPrefs.SetFloat("Janken.BgmVolume", value);
+        }
+        
+        public static float SfxVolume
+        {
+            get => PlayerPrefs.GetFloat("Janken.SfxVolume", 1);
+            set => PlayerPrefs.SetFloat("Janken.SfxVolume", value);
+        }
     }
 }
