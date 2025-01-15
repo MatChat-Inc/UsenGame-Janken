@@ -41,6 +41,8 @@ namespace USEN.Games.Janken
                         break; 
                     case JankenCharacterController.JankenCharacterState.Idle:
                         ResetControlButtons();
+                        if (_playTimes >= 1) 
+                            bottomPanel.redButton.gameObject.SetActive(true);
                         break;
                     case JankenCharacterController.JankenCharacterState.End:
                         ShowControlButtons();
@@ -151,7 +153,6 @@ namespace USEN.Games.Janken
         
         private void HideControlButtons()
         {
-            bottomPanel.redButton.gameObject.SetActive(false);
             bottomPanel.greenButton.gameObject.SetActive(false);
             bottomPanel.yellowButton.gameObject.SetActive(false);
         }

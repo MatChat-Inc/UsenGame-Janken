@@ -21,9 +21,17 @@ public class JankenCharacterController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _skletonMecanim = GetComponent<SkeletonMecanim>();
+    }
+
+    private void OnEnable()
+    {
         _stateBehaviour = _animator.GetBehaviour<JankenStateBehaviour>();
-        
-        _stateBehaviour.OnAnimationStartEvent += OnStateBehaviourOnOnAnimationStartEvent;
+        _stateBehaviour.OnAnimationStartEvent += OnAnimationStartEvent;
+    }
+    
+    private void OnDisable()
+    {
+        _stateBehaviour.OnAnimationStartEvent -= OnAnimationStartEvent;
     }
 
     private void Start()
@@ -52,9 +60,9 @@ public class JankenCharacterController : MonoBehaviour
         var animator = JankenCharacters.Default.characters[index].animator;
         
         _animator.runtimeAnimatorController = animator;
-        _stateBehaviour.OnAnimationStartEvent -= OnStateBehaviourOnOnAnimationStartEvent;
+        _stateBehaviour.OnAnimationStartEvent -= OnAnimationStartEvent;
         _stateBehaviour = _animator.GetBehaviour<JankenStateBehaviour>();
-        _stateBehaviour.OnAnimationStartEvent += OnStateBehaviourOnOnAnimationStartEvent;
+        _stateBehaviour.OnAnimationStartEvent += OnAnimationStartEvent;
         _skletonMecanim.skeletonDataAsset = skeleton;
         _skletonMecanim.Initialize(true);
     }
@@ -69,7 +77,7 @@ public class JankenCharacterController : MonoBehaviour
         State = JankenCharacterState.Idle;
     }
     
-    private void OnStateBehaviourOnOnAnimationStartEvent(AnimationStateBehaviour behaviour, Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    private void OnAnimationStartEvent(AnimationStateBehaviour behaviour, Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         var state = State;
         if (stateInfo.IsTag("idle"))
