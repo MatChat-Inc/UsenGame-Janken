@@ -92,7 +92,7 @@ namespace USEN.Games.Janken
             SFXManager.SetVolume(value * 0.1f);
             JankenPreferences.SfxVolume = value * 0.1f;
             sfxVolumeText.text = $"{value * 10:0}";
-            SFXManager.Play(R.Audios.SfxRouletteBack);
+            SFXManager.Play(R.Audios.SfxBack);
         }
         
         private void OnClickAppInfoButton() 

@@ -27,14 +27,17 @@ namespace USEN.Games.Janken
         public TextAsset categoriesJson;
         
         private List<JankenCharacter> _categories;
-        
+
+        private void Awake()
+        {
+            EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+        }
+
         private void Start()
         {
             startButton.onClick.AddListener(OnStartButtonClicked);
             settingsButton.onClick.AddListener(OnSettingsButtonClicked);
             bottomPanel.exitButton.onClick.AddListener(OnExitButtonClicked);
-            
-            EventSystem.current.SetSelectedGameObject(startButton.gameObject);
             
             // Audio volume
             BgmManager.Volume = JankenPreferences.BgmVolume;

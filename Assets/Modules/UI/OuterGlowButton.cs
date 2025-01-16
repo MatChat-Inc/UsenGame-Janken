@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using LeTai;
 using LeTai.TrueShadow;
+using Luna.Extensions;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 [RequireComponent(typeof(TrueShadow))]
-public class OuterGlowButton : Button
+public class OuterGlowButton : AudioButton
 {
     public TrueShadow outerGlow;
     public float outglowDuration = 0.2f;
@@ -17,8 +15,6 @@ public class OuterGlowButton : Button
     public bool outglowOnPressed = true;
     public bool outglowOnSelected = true;
     public bool outglowOnDisabled = false;
-    
-    public bool focusOnEnable = false;
 
     private bool _isGlowing = false;
     
@@ -32,20 +28,18 @@ public class OuterGlowButton : Button
         outerGlow.Color = outerGlow.Color.WithA(0);
     }
     
-    protected override void OnEnable()
-    {
-        base.OnEnable();
-        
-        if (focusOnEnable) 
-            EventSystem.current.SetSelectedGameObject(gameObject);
-    }
+    // protected override void OnEnable()
+    // {
+    //     base.OnEnable();
+    //     
+    //     if (focusOnEnable) 
+    //         EventSystem.current.SetSelectedGameObject(gameObject);
+    // }
 
 
     protected override void DoStateTransition(SelectionState state, bool instant)
     {
         base.DoStateTransition(state, instant);
-        
-        Debug.Log("DoStateTransition: " + state);
 
         switch (state)
         {
@@ -114,6 +108,4 @@ public class OuterGlowButton : Button
                 .SetId(outerGlow);
         else outerGlow.Color = outerGlow.Color.WithA(0);
     }
-    
-    
 }

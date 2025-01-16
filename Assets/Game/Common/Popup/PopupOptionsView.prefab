@@ -219,7 +219,7 @@ MonoBehaviour:
   m_text: "\u4E2D\u65AD\u3059\u308B\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
-  m_sharedMaterial: {fileID: -3018244264691352348, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
+  m_sharedMaterial: {fileID: -2770170105283561100, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_text: "\u30B2\u30FC\u30E0\u753B\u9762\u306B\u623B\u308B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
-  m_sharedMaterial: {fileID: -3018244264691352348, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
+  m_sharedMaterial: {fileID: -2770170105283561100, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -597,6 +597,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickAudio: {fileID: 8300000, guid: 9a521da133e3fbe4d94ce188d13d1194, type: 3}
+  submitAudio: {fileID: 8300000, guid: 9a521da133e3fbe4d94ce188d13d1194, type: 3}
+  hoverAudio: {fileID: 0}
+  selectAudio: {fileID: 8300000, guid: 3d04672c53227314ba61fcefc49fcdb5, type: 3}
+  mute: 0
+  focusOnEnable: 0
   outerGlow: {fileID: 8219426307102502888}
   outglowDuration: 0.2
   outglowOnNormal: 0
@@ -604,7 +610,6 @@ MonoBehaviour:
   outglowOnPressed: 1
   outglowOnSelected: 1
   outglowOnDisabled: 0
-  focusOnEnable: 0
 --- !u!1 &1950856037312478917
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +679,7 @@ MonoBehaviour:
   m_text: "\u7D42\u4E86\u3059\u308B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
-  m_sharedMaterial: {fileID: -3018244264691352348, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
+  m_sharedMaterial: {fileID: -2770170105283561100, guid: aeafe3b2832e99740b7f7efb3f866985, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -905,6 +910,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickAudio: {fileID: 8300000, guid: 9a521da133e3fbe4d94ce188d13d1194, type: 3}
+  submitAudio: {fileID: 8300000, guid: 9a521da133e3fbe4d94ce188d13d1194, type: 3}
+  hoverAudio: {fileID: 0}
+  selectAudio: {fileID: 8300000, guid: 3d04672c53227314ba61fcefc49fcdb5, type: 3}
+  mute: 0
+  focusOnEnable: 0
   outerGlow: {fileID: 5525447097517141449}
   outglowDuration: 0.2
   outglowOnNormal: 0
@@ -912,7 +923,6 @@ MonoBehaviour:
   outglowOnPressed: 1
   outglowOnSelected: 1
   outglowOnDisabled: 0
-  focusOnEnable: 0
 --- !u!1 &3115742487510375348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1214,7 @@ MonoBehaviour:
   offsetAngle: 90
   offsetDistance: 0
   offset: {x: 0, y: -0}
-  color: {r: 1, g: 1, b: 1, a: 0}
+  color: {r: 1, g: 1, b: 1, a: 1}
   inset: 0
   blendMode: 0
   useCasterAlpha: 1
@@ -1272,6 +1282,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickAudio: {fileID: 8300000, guid: 9a521da133e3fbe4d94ce188d13d1194, type: 3}
+  submitAudio: {fileID: 8300000, guid: 9a521da133e3fbe4d94ce188d13d1194, type: 3}
+  hoverAudio: {fileID: 0}
+  selectAudio: {fileID: 8300000, guid: 3d04672c53227314ba61fcefc49fcdb5, type: 3}
+  mute: 0
+  focusOnEnable: 1
   outerGlow: {fileID: 9186416981932010695}
   outglowDuration: 0.2
   outglowOnNormal: 0
@@ -1279,7 +1295,6 @@ MonoBehaviour:
   outglowOnPressed: 1
   outglowOnSelected: 1
   outglowOnDisabled: 0
-  focusOnEnable: 1
 --- !u!1 &5991221237479443526
 GameObject:
   m_ObjectHideFlags: 0

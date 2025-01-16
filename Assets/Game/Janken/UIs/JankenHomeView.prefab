@@ -258,6 +258,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+  clickAudio: {fileID: 0}
+  submitAudio: {fileID: 0}
+  hoverAudio: {fileID: 0}
+  selectAudio: {fileID: 0}
+  mute: 0
+  focusOnEnable: 0
   outerGlow: {fileID: 3186938975621515652}
   outglowDuration: 0.2
   outglowOnNormal: 0
@@ -265,7 +271,6 @@ MonoBehaviour:
   outglowOnPressed: 1
   outglowOnSelected: 1
   outglowOnDisabled: 0
-  focusOnEnable: 0
 --- !u!114 &3186938975621515652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +361,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 92723316226952854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 90ebee7b0c404aa9b70afb8e52e8af5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -391,6 +396,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+  clickAudio: {fileID: 0}
+  submitAudio: {fileID: 0}
+  hoverAudio: {fileID: 0}
+  selectAudio: {fileID: 0}
+  mute: 0
+  focusOnEnable: 0
 --- !u!114 &6651989584787384310
 MonoBehaviour:
   m_ObjectHideFlags: 0

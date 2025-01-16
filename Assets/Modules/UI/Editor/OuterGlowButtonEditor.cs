@@ -1,11 +1,12 @@
 #if UNITY_EDITOR
 
+using Luna.Extensions.UGUI;
 using UnityEditor;
 using UnityEditor.UI;
 using UnityEngine;
 
 [CustomEditor(typeof(OuterGlowButton))]
-public class OuterGlowButtonEditor : ButtonEditor
+public class OuterGlowButtonEditor : AudioButtonEditor
 {
     public override void OnInspectorGUI()
     {
@@ -21,12 +22,12 @@ public class OuterGlowButtonEditor : ButtonEditor
         targetMenuButton.outglowOnDisabled = EditorGUILayout.Toggle("Glow on disabled", targetMenuButton.outglowOnDisabled);
         
         EditorGUILayout.Space();
-        EditorGUILayout.LabelField("Focus", EditorStyles.boldLabel);
-        targetMenuButton.focusOnEnable = EditorGUILayout.Toggle("Focus on enable", targetMenuButton.focusOnEnable);
-        Debug.Log("Focus on enable: " + targetMenuButton.focusOnEnable);
+        // EditorGUILayout.LabelField("Focus", EditorStyles.boldLabel);
+        // targetMenuButton.focusOnEnable = EditorGUILayout.Toggle("Focus on enable", targetMenuButton.focusOnEnable);
+        // Debug.Log("Focus on enable: " + targetMenuButton.focusOnEnable);
         
         EditorGUILayout.Space();
-        EditorGUILayout.LabelField("Button", EditorStyles.boldLabel);
+        // EditorGUILayout.LabelField("Button", EditorStyles.boldLabel);
         
         base.OnInspectorGUI();
         
