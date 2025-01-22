@@ -168,8 +168,19 @@ namespace USEN.Games.Janken
                 builder: (popup) =>
                 {
                     popup.onOption1 = () => Navigator.Pop();
-                    popup.onOption2 = () => Navigator.PopToRoot();
-                    popup.onOption3 = () => SceneManager.LoadScene("GameEntries");
+                    popup.onOption2 = () =>
+                    {
+                        SFXManager.Stop();
+                        
+                        Navigator.PopToRoot();
+                        //Navigator.PopUntil<RouletteStartView>();
+                    }; 
+                    // popup.onOption3 = () => SceneManager.LoadScene("GameEntries");
+#if UNITY_ANDROID
+                    popup.onOption3 = () => Android.Back();
+#else
+                    popup.onOption3 = () => Application.Quit();
+#endif
                 });
         }
     }
