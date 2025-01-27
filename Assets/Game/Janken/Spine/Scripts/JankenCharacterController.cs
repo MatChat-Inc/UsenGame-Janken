@@ -54,6 +54,11 @@ public class JankenCharacterController : MonoBehaviour
         _animator.SetTrigger("Start");
     }
     
+    public void StopJanken()
+    {
+        _animator.SetTrigger("Stop");
+    }
+    
     public void SwitchCharacter(int index)
     {
         var skeleton = JankenCharacters.Default.characters[index].skeleton;

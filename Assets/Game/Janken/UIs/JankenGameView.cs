@@ -77,6 +77,9 @@ namespace USEN.Games.Janken
 
         private void OnDisable()
         {
+            Debug.Log("[JankenGameView] OnDisable");
+            characterController.StopJanken();
+            
             bottomPanel.onExitButtonClicked -= OnExitButtonClicked;
             bottomPanel.onConfirmButtonClicked -= OnConfirmButtonClicked;
             bottomPanel.onRedButtonClicked -= OnRedButtonClicked;
@@ -87,6 +90,8 @@ namespace USEN.Games.Janken
 
         private void OnDestroy()
         {
+            Debug.Log("[JankenGameView] OnDestroy");
+            
             if (_isFinalGame)
                 BgmManager.Play(R.Audios.BgmJanken);
         }
