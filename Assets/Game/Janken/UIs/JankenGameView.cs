@@ -41,8 +41,6 @@ namespace USEN.Games.Janken
                         break; 
                     case JankenCharacterController.JankenCharacterState.Idle:
                         ResetControlButtons();
-                        if (_playTimes >= 1) 
-                            bottomPanel.redButton.gameObject.SetActive(true);
                         break;
                     case JankenCharacterController.JankenCharacterState.End:
                         ShowControlButtons();
@@ -130,7 +128,7 @@ namespace USEN.Games.Janken
         {
             await Navigator.Push<RouletteGameSelectionView>((view) => {
                 view.Category = RouletteManager.Instance.GetCategory("バツゲーム");
-                BgmManager.Resume();
+                // BgmManager.Resume();
                 
                 if (RoulettePreferences.DisplayMode == RouletteDisplayMode.Random)
                 { 
