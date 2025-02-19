@@ -41,6 +41,7 @@ namespace USEN.Games.Janken
             commendationVideoSettingsSlider.onValueChanged.AddListener(OnCommendationVideoSettingsSliderValueChanged);
             commendationVideoSettingsSlider.value = JankenPreferences.CommendationVideoOption;
             commendationVideoSettingsToggles.ToggleOn(JankenPreferences.CommendationVideoOption);
+            commendationVideoSettingsToggles.Bind(commendationVideoSettingsSlider);
             
             // Audio volume
             bgmVolumeText.text = $"{JankenPreferences.BgmVolume * 100:0}";

@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.Video;
+using USEN.Games.Janken;
 using USEN.Games.Roulette;
 
 namespace USEN.Games.Common
@@ -27,7 +28,7 @@ namespace USEN.Games.Common
         private void Start()
         {
             // Play video
-            var index = RoulettePreferences.CommendationVideoOption;
+            var index = JankenPreferences.CommendationVideoOption;
              
             videoPlayer.targetCamera = Camera.main;
             
