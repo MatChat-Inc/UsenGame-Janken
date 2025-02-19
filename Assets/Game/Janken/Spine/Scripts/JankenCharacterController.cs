@@ -14,6 +14,7 @@ public class JankenCharacterController : MonoBehaviour
     private Animator _animator;
     private SkeletonMecanim _skletonMecanim;
     private JankenStateBehaviour _stateBehaviour;
+    private AudioSource _audioSource;
 
     public JankenCharacterState State { get; private set; } = JankenCharacterState.Idle;
 
@@ -21,6 +22,7 @@ public class JankenCharacterController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _skletonMecanim = GetComponent<SkeletonMecanim>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -74,7 +76,7 @@ public class JankenCharacterController : MonoBehaviour
     
     public void Play(AudioClip audioClip)
     {
-        SFXManager.Play(audioClip);
+        _audioSource.PlayOneShot(audioClip);
     }
     
     public void ResetState()

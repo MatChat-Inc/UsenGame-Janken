@@ -90,13 +90,13 @@ MonoBehaviour:
     - UI
     - USEN.Games.Roulette
   - m_GUID: e9f753ffc4190d64fa826de54f74bd00
-    m_Address: USEN.Games.Janken.YamanoteCategoryView
+    m_Address: USEN.Games.Janken.JankenCharacterView
     m_ReadOnly: 0
     m_SerializedLabels:
     - UI
     - USEN.Games.Janken
   - m_GUID: d182b6367976172498f0bf2c66c1786e
-    m_Address: USEN.Games.Janken.YamanoteGameView
+    m_Address: USEN.Games.Janken.JankenGameView
     m_ReadOnly: 0
     m_SerializedLabels:
     - UI
@@ -137,6 +137,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - UI
     - global
+  - m_GUID: bc4272d9a8e67cc4bb0cb91cd3c33df0
+    m_Address: USEN.Games.Common.PopupOptionsView2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - USEN.Games.Common
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f9d83a9dd8da1bc44a0fdec9f5ae85a2, type: 2}
   m_SchemaSet:
