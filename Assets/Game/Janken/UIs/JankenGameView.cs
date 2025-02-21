@@ -3,10 +3,12 @@
 using System;
 using Cysharp.Threading.Tasks;
 using Luna;
+using Luna.Extensions;
 using Luna.UI;
 using Luna.UI.Navigation;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,6 +22,7 @@ namespace USEN.Games.Janken
         public TextMeshProUGUI confirmText;
         public BottomPanel bottomPanel;
         
+        public AssetReferenceGameObject spineCharacter;
         public JankenCharacterController characterController;
         
         public Sprite rouletteBackground;
@@ -30,23 +33,28 @@ namespace USEN.Games.Janken
         private void Start()
         {
             HideControlButtons();
-            
-            characterController.SwitchCharacter(JankenPreferences.SelectedCharacter);
-            characterController.OnStateChange += (state) =>
+
+            spineCharacter.LoadAssetAsync().Task.Then(prefab =>
             {
-                switch (state)
+                var character = Instantiate(prefab, transform);
+                characterController = character.GetComponent<JankenCharacterController>();
+                characterController.SwitchCharacter(JankenPreferences.SelectedCharacter);
+                characterController.OnStateChange += (state) =>
                 {
-                    case JankenCharacterController.JankenCharacterState.Waiting:
-                        ++_playTimes;
-                        break; 
-                    case JankenCharacterController.JankenCharacterState.Idle:
-                        ResetControlButtons();
-                        break;
-                    case JankenCharacterController.JankenCharacterState.End:
-                        ShowControlButtons();
-                        break;
-                }
-            };
+                    switch (state)
+                    {
+                        case JankenCharacterController.JankenCharacterState.Waiting:
+                            ++_playTimes;
+                            break; 
+                        case JankenCharacterController.JankenCharacterState.Idle:
+                            ResetControlButtons();
+                            break;
+                        case JankenCharacterController.JankenCharacterState.End:
+                            ShowControlButtons();
+                            break;
+                    }
+                };
+            });
         }
         
         private void Update()
@@ -63,7 +71,7 @@ namespace USEN.Games.Janken
         private void OnEnable()
         {
             ResetControlButtons();
-            characterController.ResetState();
+            characterController?.ResetState();
             
             bottomPanel.onExitButtonClicked += OnExitButtonClicked;
             bottomPanel.onConfirmButtonClicked += OnConfirmButtonClicked;
@@ -76,7 +84,7 @@ namespace USEN.Games.Janken
         private void OnDisable()
         {
             Debug.Log("[JankenGameView] OnDisable");
-            characterController.StopJanken();
+            characterController?.StopJanken();
             
             bottomPanel.onExitButtonClicked -= OnExitButtonClicked;
             bottomPanel.onConfirmButtonClicked -= OnConfirmButtonClicked;

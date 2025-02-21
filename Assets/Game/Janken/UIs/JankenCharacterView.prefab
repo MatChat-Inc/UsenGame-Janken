@@ -311,12 +311,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6859e816170e2fd43a9a346285a9d5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snapMode: 0
   data: []
   cell: {fileID: 7772315010347326735}
-  snapToCellWhenSelected: 1
   selectFirstCellOnEnable: 0
   selectFirstCellOnReload: 1
   keepSelectionOnReload: 1
+  snapToCellWhenSelected: 1
   skeletonMecanim: {fileID: 1648458290588641939}
   animator: {fileID: 7132421396269683903}
 --- !u!1 &502202828560813791

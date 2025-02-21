@@ -50,8 +50,8 @@ namespace USEN.Games.Janken
                 Assets.Load(GetType().Namespace, "Audio");
                 Assets.Load("USEN.Games.Common", "Audio");
                 Assets.Load("Audio", "Character");
+                JankenCharacters.DefaultAsset.Load();
             });
-            
         }
 
         private void OnEnable()

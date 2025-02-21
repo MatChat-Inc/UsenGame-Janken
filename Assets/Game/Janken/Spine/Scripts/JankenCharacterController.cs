@@ -28,22 +28,14 @@ public class JankenCharacterController : MonoBehaviour
     private void OnEnable()
     {
         _stateBehaviour = _animator.GetBehaviour<JankenStateBehaviour>();
-        _stateBehaviour.OnAnimationStartEvent += OnAnimationStartEvent;
+        if (_stateBehaviour != null)
+            _stateBehaviour.OnAnimationStartEvent += OnAnimationStartEvent;
     }
     
     private void OnDisable()
     {
-        _stateBehaviour.OnAnimationStartEvent -= OnAnimationStartEvent;
-    }
-
-    private void Start()
-    {
-        
-    }
-    
-    private void Update()
-    {
-        
+        if (_stateBehaviour != null)
+            _stateBehaviour.OnAnimationStartEvent -= OnAnimationStartEvent;
     }
     
     public void StartJanken()
@@ -52,7 +44,6 @@ public class JankenCharacterController : MonoBehaviour
         var commentIndex = UnityEngine.Random.Range(0, 10);
         _animator.SetInteger("Result", result);
         _animator.SetFloat("Comment", commentIndex);
-        
         _animator.SetTrigger("Start");
     }
     
@@ -67,7 +58,8 @@ public class JankenCharacterController : MonoBehaviour
         var animator = JankenCharacters.Default.characters[index].animator;
         
         _animator.runtimeAnimatorController = animator;
-        _stateBehaviour.OnAnimationStartEvent -= OnAnimationStartEvent;
+        if (_stateBehaviour != null)
+            _stateBehaviour.OnAnimationStartEvent -= OnAnimationStartEvent;
         _stateBehaviour = _animator.GetBehaviour<JankenStateBehaviour>();
         _stateBehaviour.OnAnimationStartEvent += OnAnimationStartEvent;
         _skletonMecanim.skeletonDataAsset = skeleton;

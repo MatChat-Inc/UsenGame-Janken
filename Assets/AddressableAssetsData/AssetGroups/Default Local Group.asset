@@ -16,7 +16,17 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 5e50e85ce15083f4eb4b6c539c781b11
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 9621a31786581ef478cb330f0f52ec1e
+    m_Address: Assets/Game/Janken/UIs/Spine Mecanim.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+  - m_GUID: 23f36499cfff86148967e3ccb7b80218
+    m_Address: Assets/Game/Janken/Data/JankenCharacters.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f9d83a9dd8da1bc44a0fdec9f5ae85a2, type: 2}
   m_SchemaSet:

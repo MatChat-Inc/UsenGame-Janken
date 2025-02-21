@@ -18,6 +18,7 @@
     <type fullname="USEN.Games.Common.PopupOptionsView2" preserve="all" />
     <type fullname="USEN.Games.Janken.JankenCharacterList" preserve="all" />
     <type fullname="USEN.Games.Janken.JankenCharacterListCell" preserve="all" />
+    <type fullname="USEN.Games.Janken.JankenCharacters" preserve="all" />
     <type fullname="USEN.Games.Janken.JankenCharacterView" preserve="all" />
     <type fullname="USEN.Games.Janken.JankenGameView" preserve="all" />
     <type fullname="USEN.Games.Janken.JankenHomeView" preserve="all" />
@@ -35,6 +36,7 @@
     <type fullname="USEN.Games.Roulette.RouletteSettingsView" preserve="all" />
     <type fullname="USEN.Games.Roulette.RouletteStartView" preserve="all" />
     <type fullname="USEN.Games.Roulette.RouletteWheel" preserve="all" />
+    <type fullname="USEN.Games.Janken.JankenCharacter" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="LeTai.TrueShadow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="LeTai.TrueShadow.TrueShadow" preserve="all" />
@@ -58,6 +60,7 @@
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+    <type fullname="UnityEngine.AddressableAssets.AssetReferenceGameObject" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.AudioClip]" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
