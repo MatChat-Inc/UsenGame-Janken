@@ -167,9 +167,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.6666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 3911210d7ed505a4fb23dcfffa336cda, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/09_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -381,9 +381,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.6666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 1a56d2f04f3e59e4f87a1c112f8e3450, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/12_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -622,9 +622,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.36666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: ae0a583075d803149a0ff4b9cbd99a7d, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/03_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -790,9 +790,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.23333335
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 49b413494c39b6143b0f492d2be62c2a, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/04_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -933,9 +933,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.20000002
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 8ec0a83430e5cb148ba772f359fc7b7c, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1054,9 +1054,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: eed1b8934014e8f40a73372baea9c542, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/01_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1290,9 +1290,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.23333335
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 60ed9973ed6ef9c4d952160c824a2ed8, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/05_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1460,9 +1460,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.6333334
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: f052b66ae90bf7b4298e5febe4ed7a63, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/10_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1674,9 +1674,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: ecd41cefb7fcab44faa8d951eb244699, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/15_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1795,9 +1795,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.36666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: ae0a583075d803149a0ff4b9cbd99a7d, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/03_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2269,9 +2269,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.7666667
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: dfe4fd46c0968c846a7169f672e0399b, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2390,9 +2390,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.6666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 1d46e1d5e0c28004b937de998e241bba, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/13_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2511,9 +2511,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.16666667
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 73a30b66f6e3cb04da5ac2d26400f5c0, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2531,25 +2531,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Start
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Result
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stop
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -2705,9 +2705,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: d4073ace87316274eb4bcfee13b75f04, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/11_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2855,9 +2855,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.73333335
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 27849bcc977cd8442bb4207f788a74f4, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/08_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2976,9 +2976,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.23333335
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 9e70f7aea378056449396d3679d40e22, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/06_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3097,9 +3097,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.6333334
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 83b30aa90f401314eb47b678bea691f6, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/16_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3706,9 +3706,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: e0a4a42da1ca47c49b482cad9177bff8, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/07_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3827,9 +3827,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.36666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: ae0a583075d803149a0ff4b9cbd99a7d, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/03_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4022,9 +4022,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.73333335
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: d5be99e54594b024ba1fb754cb9012d7, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/02_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4236,9 +4236,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.6666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 75baf2ec467c3354caf69205dd650be3, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Gal/mc/14_gal.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4833,9 +4833,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.26666668
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 1fa5b2096ea86fb4cb3ed408e0ca9bc6, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1

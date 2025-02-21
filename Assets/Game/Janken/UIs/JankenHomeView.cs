@@ -34,7 +34,7 @@ namespace USEN.Games.Janken
             EventSystem.current.SetSelectedGameObject(startButton.gameObject);
         }
 
-        private void Start()
+        private async void Start()
         {
             startButton.onClick.AddListener(OnStartButtonClicked);
             settingsButton.onClick.AddListener(OnSettingsButtonClicked);
@@ -45,13 +45,10 @@ namespace USEN.Games.Janken
             SFXManager.Volume = JankenPreferences.SfxVolume;
             
             // Load audios
-            R.Audios.BgmJanken.Load().Then(clip => {
-                BgmManager.Play(clip);
-                Assets.Load(GetType().Namespace, "Audio");
-                Assets.Load("USEN.Games.Common", "Audio");
-                Assets.Load("Audio", "Character");
-                JankenCharacters.DefaultAsset.Load();
-            });
+            await JankenCharacters.DefaultAsset.Load();
+            await Assets.Load("USEN.Games.Common", "Audio");
+            var clip = await R.Audios.BgmJanken.Load();
+            BgmManager.Play(clip);
         }
 
         private void OnEnable()

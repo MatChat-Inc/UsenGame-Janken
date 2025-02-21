@@ -115,9 +115,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: c4b15442a2ed1074cbd02cff254b71d2, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/01_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -329,9 +329,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: aa481ffdcab300841b36cc714b45e8c8, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/02_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -450,9 +450,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.36666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 42612c764216fb3488b3477cbac5f1a1, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/03_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1287,9 +1287,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: a4e6c3641990e5c47b9a71b8c77c7f5e, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/16_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1609,9 +1609,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.53333336
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: f1eab1fbbc75c3b4d985cf51b2615751, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/04_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -1956,9 +1956,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.53333336
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: ecb868d006a915a4bbfe5616dc5a8c35, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/06_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2098,25 +2098,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Start
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Result
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stop
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -2338,9 +2338,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.73333335
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 5a445a388a926cd499c577715bb5ca83, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/11_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2486,9 +2486,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.16666667
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 73a30b66f6e3cb04da5ac2d26400f5c0, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2797,9 +2797,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: c9f06972148a98546b00ecd2bfeeccc2, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/14_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -2918,9 +2918,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.26666668
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 1fa5b2096ea86fb4cb3ed408e0ca9bc6, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3039,9 +3039,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 8c3548839a8bfbe43956b8f86b4cc018, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/12_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3160,9 +3160,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: c5246885dbff31d4ea380daf7a5f45aa, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/15_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3401,9 +3401,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.7666667
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: dfe4fd46c0968c846a7169f672e0399b, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3730,9 +3730,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 2bef8e4b4a1f66a42acb087742c0977d, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/10_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -3851,9 +3851,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.36666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 42612c764216fb3488b3477cbac5f1a1, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/03_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4041,9 +4041,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 4683d63c3cf150e428dffd192534c892, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/07_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4255,9 +4255,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.20000002
-    functionName: Play
+    functionName: PlayAsync
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 8ec0a83430e5cb148ba772f359fc7b7c, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4425,9 +4425,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: a71e16dbd80b3e3448720a7381393f6e, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/08_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4546,9 +4546,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 054765678a3454f46af3eeab670734a5, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/13_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4667,9 +4667,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.36666667
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 42612c764216fb3488b3477cbac5f1a1, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/03_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4788,9 +4788,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.53333336
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: e57f4090014af5a44bdb446f315e02ee, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/05_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
@@ -4936,9 +4936,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.8000001
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 64ce21a5e39f01347bf7a8753cc12ac9, type: 3}
+    functionName: PlayAsync
+    data: Assets/Game/Janken/Spine/Characters/Macho/mc/09_macho.mp3
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1

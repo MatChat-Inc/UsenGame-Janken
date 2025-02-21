@@ -2,7 +2,7 @@ using System;
 using Game.Janken.Spine.Scripts;
 using Luna;
 using Luna.Core.Animation;
-using Luna.Extensions.Unity;
+using Luna.Extensions;
 using Spine.Unity;
 using UnityEngine;
 using USEN.Games.Janken;
@@ -69,6 +69,11 @@ public class JankenCharacterController : MonoBehaviour
     public void Play(AudioClip audioClip)
     {
         _audioSource.PlayOneShot(audioClip);
+    }
+    
+    public void PlayAsync(string address)
+    {
+        new Asset<AudioClip>(address).Load().Then(Play);
     }
     
     public void ResetState()

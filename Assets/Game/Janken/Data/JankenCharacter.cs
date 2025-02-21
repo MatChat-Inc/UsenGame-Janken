@@ -17,6 +17,5 @@ namespace USEN.Games.Janken
         [VerticalGroup("Data"), LabelWidth(80)] public Sprite NameSprite;
         [VerticalGroup("Data"), LabelWidth(80)] public SkeletonDataAsset skeleton;
         [VerticalGroup("Data"), LabelWidth(80)] public RuntimeAnimatorController animator;
-        [VerticalGroup("Data"), LabelWidth(80)] public AudioClip helloVoice;
     }
 }
