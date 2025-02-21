@@ -93,6 +93,7 @@ MonoBehaviour:
     - USEN.Games.Roulette
     - USEN.Games.Yamanote
     - USEN.Games.Janken
+    - Character
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 2764ed07e9e163040ad968fa028ef2a4, type: 2}

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DG.Tweening;
 using Luna;
+using Luna.Extensions;
 using Luna.UI;
 using Luna.UI.Navigation;
 using Modules.UI.Misc;
@@ -43,7 +44,14 @@ namespace USEN.Games.Janken
             BgmManager.Volume = JankenPreferences.BgmVolume;
             SFXManager.Volume = JankenPreferences.SfxVolume;
             
-            BgmManager.Play(R.Audios.BgmJanken);
+            // Load audios
+            R.Audios.BgmJanken.Load().Then(clip => {
+                BgmManager.Play(clip);
+                Assets.Load(GetType().Namespace, "Audio");
+                Assets.Load("USEN.Games.Common", "Audio");
+                Assets.Load("Audio", "Character");
+            });
+            
         }
 
         private void OnEnable()

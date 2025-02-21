@@ -57,6 +57,7 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Common
   - m_GUID: cab7f89994c86e94ab23d6cff5040ac5
     m_Address: Assets/Game/Roulette/Audios/sfx_roulette_game_decelerating.mp3
     m_ReadOnly: 0
@@ -77,171 +78,205 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Common
   - m_GUID: 3d04672c53227314ba61fcefc49fcdb5
     m_Address: Assets/Game/Common/Audios/sfx_select.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Common
   - m_GUID: 1fa5b2096ea86fb4cb3ed408e0ca9bc6
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/01_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: dfe4fd46c0968c846a7169f672e0399b
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/02_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 8ec0a83430e5cb148ba772f359fc7b7c
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/03_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 07fa38bf24eb3814c86260ea8481c6e7
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/04_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 2617ed62472d2f54698aee2f70d383c4
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/05_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 73a30b66f6e3cb04da5ac2d26400f5c0
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/06_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 4c65f2a9c77a3174fb305d204d29104e
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/07_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: e11cbe677d8e8374c9f3c78d0866dd6c
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/08_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 10c4ac4680ff3db44a42a18cfd5f9305
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/09_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 313951c588640b5468f257a095e179b0
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/10_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 78dcd8bb069e4e94fb90614d6bb38c49
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/11_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 61eef759de5015b44a3185de6d02516b
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/12_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 96fd7f4fee78f0440bfc59678b14db66
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/13_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 54eda618b6789cd4398ad2ebad0656eb
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/14_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 73d337ea82121264696ac0b7340b5953
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/15_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 0cc155b6ad378f04097775c7883d4f42
     m_Address: Assets/Game/Janken/Spine/Characters/King/mc/16_king.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: a56766e62a3675946a29c8bce6726589
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/01_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: d7301700d8f5e46458a014cfd0c1cbfb
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/02_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 573ac7b747a61444a8706e6b269aa76b
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/03_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 85d1db0bbcc4d464ba6daa18a8a464a2
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/04_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: d514c2ad2ded4ae41952113587a2ae63
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/05_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 6ec8ad28b2728c24dad3999479c55d61
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/06_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 7da41836bdb921c4fafaf54965e6505f
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/07_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 5f7bcb92716e027438f4026d0eca8908
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/08_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 34a13120fd43b9f4cac190ea1e67a81b
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/09_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: d1fa206d44e4fdf45ba3227d3700482e
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/10_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: a5c3d6e688a0af3418eb0bd90f9b1ec8
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/11_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 7db816d18ee32554d8e41f4349eb7170
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/12_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: e9dd305699d37c64589aa154ac0b652f
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/13_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 4977eac578505f24989b2eff7a027c9f
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/14_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: b17c065b22609344a942c3544960e8a2
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/15_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: f0308c5391f99f14b99512ff5b31569f
     m_Address: Assets/Game/Janken/Spine/Characters/Queen/mc/16_queen.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: e885484e1bc99fb47a0ac3f6bfa586b1
     m_Address: Packages/com.esotericsoftware.spine.spine-unity-examples/Sound/Footstep.ogg
     m_ReadOnly: 0
@@ -267,171 +302,205 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 3911210d7ed505a4fb23dcfffa336cda
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/09_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: e0a4a42da1ca47c49b482cad9177bff8
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/07_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 27849bcc977cd8442bb4207f788a74f4
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/08_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: ecd41cefb7fcab44faa8d951eb244699
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/15_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: f052b66ae90bf7b4298e5febe4ed7a63
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/10_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 9e70f7aea378056449396d3679d40e22
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/06_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: ae0a583075d803149a0ff4b9cbd99a7d
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/03_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 60ed9973ed6ef9c4d952160c824a2ed8
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/05_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: d5be99e54594b024ba1fb754cb9012d7
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/02_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 75baf2ec467c3354caf69205dd650be3
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/14_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 83b30aa90f401314eb47b678bea691f6
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/16_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 49b413494c39b6143b0f492d2be62c2a
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/04_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 1a56d2f04f3e59e4f87a1c112f8e3450
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/12_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: eed1b8934014e8f40a73372baea9c542
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/01_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: d4073ace87316274eb4bcfee13b75f04
     m_Address: Assets/Game/Janken/Spine/Characters/Gal/mc/11_gal.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 42612c764216fb3488b3477cbac5f1a1
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/03_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: a4e6c3641990e5c47b9a71b8c77c7f5e
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/16_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 8c3548839a8bfbe43956b8f86b4cc018
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/12_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 64ce21a5e39f01347bf7a8753cc12ac9
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/09_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: c4b15442a2ed1074cbd02cff254b71d2
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/01_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: ecb868d006a915a4bbfe5616dc5a8c35
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/06_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 054765678a3454f46af3eeab670734a5
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/13_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: a71e16dbd80b3e3448720a7381393f6e
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/08_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: e57f4090014af5a44bdb446f315e02ee
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/05_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 5a445a388a926cd499c577715bb5ca83
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/11_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: f1eab1fbbc75c3b4d985cf51b2615751
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/04_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: aa481ffdcab300841b36cc714b45e8c8
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/02_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 4683d63c3cf150e428dffd192534c892
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/07_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: c5246885dbff31d4ea380daf7a5f45aa
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/15_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: c9f06972148a98546b00ecd2bfeeccc2
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/14_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 2bef8e4b4a1f66a42acb087742c0977d
     m_Address: Assets/Game/Janken/Spine/Characters/Macho/mc/10_macho.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - Character
   - m_GUID: 5be6c4bd18d72c841a9dc29086f9f350
     m_Address: Assets/Game/Janken/Audios/bgm_janken_final.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Janken
   - m_GUID: f77c33b7025cb4f4082f252feceaa6fc
     m_Address: Assets/Game/Janken/Audios/bgm_janken.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Janken
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f9d83a9dd8da1bc44a0fdec9f5ae85a2, type: 2}
   m_SchemaSet:
