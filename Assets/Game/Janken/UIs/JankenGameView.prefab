@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   confirmText: {fileID: 2668141422677824720}
   bottomPanel: {fileID: 1090152134967780602}
-  spineCharacter:
+  spineMecanim:
     m_AssetGUID: 9621a31786581ef478cb330f0f52ec1e
     m_SubObjectName: 
     m_SubObjectType: 

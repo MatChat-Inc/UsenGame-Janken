@@ -604,7 +604,11 @@ MonoBehaviour:
   startButton: {fileID: 2007290121}
   settingsButton: {fileID: 4750067799388164558}
   bottomPanel: {fileID: 7994328427593190427}
-  categoriesJson: {fileID: 4900000, guid: 664dcc3c71fb3eb4a9e4dd291dfeb7f6, type: 3}
+  spineCharacter:
+    m_AssetGUID: 9621a31786581ef478cb330f0f52ec1e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!225 &5449331590822972920
 CanvasGroup:
   m_ObjectHideFlags: 0

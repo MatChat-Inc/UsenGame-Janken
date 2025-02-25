@@ -1,19 +1,15 @@
 // Created by LunarEclipse on 2024-6-21 1:53.
 
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
 using Luna;
 using Luna.Extensions;
 using Luna.UI;
 using Luna.UI.Navigation;
-using Modules.UI.Misc;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using USEN.Games.Common;
 using USEN.Games.Roulette;
@@ -26,7 +22,8 @@ namespace USEN.Games.Janken
         public Button settingsButton;
         public BottomPanel bottomPanel;
         
-        public TextAsset categoriesJson;
+        public AssetReferenceGameObject spineCharacter;
+        public JankenCharacterController characterController;
         
         private List<JankenCharacter> _categories;
 
@@ -51,6 +48,7 @@ namespace USEN.Games.Janken
             
             // Load audios
             await JankenCharacters.DefaultAsset.Load();
+            await spineCharacter.LoadAssetAsync();
             await Assets.Load("USEN.Games.Common", "Audio");
             
             Navigator.PopToRoot();
@@ -81,18 +79,13 @@ namespace USEN.Games.Janken
             if (Input.GetKeyDown(KeyCode.Escape) ||
                 Input.GetButtonDown("Cancel")) 
                 OnExitButtonClicked();
-
-#if DEBUG
-            if (Input.GetKeyDown(KeyCode.Keypad0))
-            {
-                Navigator.ShowModal<CircularLoadingIndicator>();
-            }
-#endif
         }
 
         public void OnStartButtonClicked()
         { 
-            Navigator.Push<JankenGameView>();
+            Navigator.Push<JankenGameView>(view => {
+               view.characterController = characterController; 
+            });
         }
         
         public void OnSettingsButtonClicked()

@@ -1,7 +1,6 @@
 // Created by LunarEclipse on 2024-7-21 19:44.
 
 using System;
-using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Luna;
 using Luna.Extensions;
@@ -12,6 +11,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using USEN.Games.Common;
 using USEN.Games.Roulette;
@@ -23,39 +23,42 @@ namespace USEN.Games.Janken
         public TextMeshProUGUI confirmText;
         public BottomPanel bottomPanel;
         
-        public AssetReferenceGameObject spineCharacter;
+        [FormerlySerializedAs("spineCharacter")] 
+        public AssetReferenceGameObject spineMecanim;
         public JankenCharacterController characterController;
         
         public Sprite rouletteBackground;
         
         private int _playTimes = 0;
         private bool _isFinalGame = false;
-
-        private void Start()
+        
+        
+        private async void Start()
         {
             HideControlButtons();
 
-            spineCharacter.LoadAssetAsync().Task.Then(prefab =>
+            if (characterController == null)
             {
+                var prefab = await spineMecanim.LoadAssetAsync();
                 var character = Instantiate(prefab, transform);
                 characterController = character.GetComponent<JankenCharacterController>();
-                characterController.SwitchCharacter(JankenPreferences.SelectedCharacter);
-                characterController.OnStateChange += (state) =>
+            }
+            
+            characterController.SwitchCharacter(JankenPreferences.SelectedCharacter);
+            characterController.OnStateChange += (state) => {
+                switch (state)
                 {
-                    switch (state)
-                    {
-                        case JankenCharacterController.JankenCharacterState.Waiting:
-                            ++_playTimes;
-                            break; 
-                        case JankenCharacterController.JankenCharacterState.Idle:
-                            ResetControlButtons();
-                            break;
-                        case JankenCharacterController.JankenCharacterState.End:
-                            ShowControlButtons();
-                            break;
-                    }
-                };
-            });
+                    case JankenCharacterController.JankenCharacterState.Waiting:
+                        ++_playTimes;
+                        break; 
+                    case JankenCharacterController.JankenCharacterState.Idle:
+                        ResetControlButtons();
+                        break;
+                    case JankenCharacterController.JankenCharacterState.End:
+                        ShowControlButtons();
+                        break;
+                }
+            };
         }
         
         private void Update()
@@ -121,11 +124,10 @@ namespace USEN.Games.Janken
             }
         }
 
-        private async void OnRedButtonClicked()
+        private void OnRedButtonClicked()
         {
             _isFinalGame = true;
             bottomPanel.redButton.gameObject.SetActive(false);
-            await UniTask.Yield(PlayerLoopTiming.PostLateUpdate);
             R.Audios.BgmJankenFinal.Load().Then(BgmManager.Play);
         }
 

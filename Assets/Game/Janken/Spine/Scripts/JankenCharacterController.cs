@@ -16,6 +16,8 @@ public class JankenCharacterController : MonoBehaviour
     private JankenStateBehaviour _stateBehaviour;
     private AudioSource _audioSource;
 
+    private JankenCharacter _character;
+    
     public JankenCharacterState State { get; private set; } = JankenCharacterState.Idle;
 
     private void Awake()
@@ -23,6 +25,11 @@ public class JankenCharacterController : MonoBehaviour
         _animator = GetComponent<Animator>();
         _skletonMecanim = GetComponent<SkeletonMecanim>();
         _audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        Debug.Log("JankenCharacterController Start");
     }
 
     private void OnEnable()
@@ -54,8 +61,13 @@ public class JankenCharacterController : MonoBehaviour
     
     public void SwitchCharacter(int index)
     {
-        var skeleton = JankenCharacters.Default.characters[index].skeleton;
-        var animator = JankenCharacters.Default.characters[index].animator;
+        var character = JankenCharacters.Default.characters[index];
+        
+        if (_character == character) return;
+        _character = character;
+        
+        var skeleton = _character.skeleton;
+        var animator = _character.animator;
         
         _animator.runtimeAnimatorController = animator;
         if (_stateBehaviour != null)
