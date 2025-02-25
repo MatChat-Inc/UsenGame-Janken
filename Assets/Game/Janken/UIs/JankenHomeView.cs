@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Luna;
 using Luna.Extensions;
@@ -43,10 +44,17 @@ namespace USEN.Games.Janken
             // Audio volume
             BgmManager.Volume = JankenPreferences.BgmVolume;
             SFXManager.Volume = JankenPreferences.SfxVolume;
+
+            // Show loading indicator before necessary assets are loaded
+            await UniTask.Yield(PlayerLoopTiming.PreLateUpdate);
+            Navigator.ShowModal<CircularLoadingIndicator>();
             
             // Load audios
             await JankenCharacters.DefaultAsset.Load();
             await Assets.Load("USEN.Games.Common", "Audio");
+            
+            Navigator.PopToRoot();
+            
             var clip = await R.Audios.BgmJanken.Load();
             BgmManager.Play(clip);
         }
@@ -73,6 +81,13 @@ namespace USEN.Games.Janken
             if (Input.GetKeyDown(KeyCode.Escape) ||
                 Input.GetButtonDown("Cancel")) 
                 OnExitButtonClicked();
+
+#if DEBUG
+            if (Input.GetKeyDown(KeyCode.Keypad0))
+            {
+                Navigator.ShowModal<CircularLoadingIndicator>();
+            }
+#endif
         }
 
         public void OnStartButtonClicked()

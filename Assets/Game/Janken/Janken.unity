@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JankenHomeView
       objectReference: {fileID: 0}
+    - target: {fileID: 1252332072678892585, guid: e67841950b12f1f49b6879df5fb194a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3055650759555341639, guid: e67841950b12f1f49b6879df5fb194a5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -441,6 +445,10 @@ PrefabInstance:
     - target: {fileID: 7081632086544790017, guid: e67841950b12f1f49b6879df5fb194a5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906380368430573932, guid: e67841950b12f1f49b6879df5fb194a5, type: 3}
+      propertyPath: categoriesJson
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8051489683774240623, guid: e67841950b12f1f49b6879df5fb194a5, type: 3}
       propertyPath: m_AnchorMax.y
