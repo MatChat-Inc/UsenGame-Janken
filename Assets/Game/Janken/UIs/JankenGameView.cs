@@ -103,6 +103,7 @@ namespace USEN.Games.Janken
 
         private void OnDestroy()
         {
+            BgmManager.Resume();
             if (_isFinalGame)
                 BgmManager.Play(R.Audios.BgmJanken);
         }
@@ -180,6 +181,8 @@ namespace USEN.Games.Janken
         
         private void PopupConfirmView()
         {
+            var orginalVolume = BgmManager.Volume;
+            
             Navigator.ShowModal<PopupOptionsView>(
                 builder: (popup) =>
                 {
@@ -187,17 +190,18 @@ namespace USEN.Games.Janken
                     popup.onOption2 = () =>
                     {
                         SFXManager.Stop();
-                        
                         Navigator.PopToRoot();
-                        //Navigator.PopUntil<RouletteStartView>();
                     }; 
-                    // popup.onOption3 = () => SceneManager.LoadScene("GameEntries");
 #if UNITY_ANDROID
                     popup.onOption3 = () => Android.Back();
 #else
                     popup.onOption3 = () => Application.Quit();
 #endif
+                    BgmManager.Resume();
+                    BgmManager.SetVolume(BgmManager.Volume * 0.6f, 0.3f);
                 });
+            
+            BgmManager.SetVolume(orginalVolume, 0.3f);
         }
     }
 }
