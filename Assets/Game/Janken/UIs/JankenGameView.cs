@@ -74,6 +74,8 @@ namespace USEN.Games.Janken
 
         private void OnEnable()
         {
+            BgmManager.Resume();
+            
             ResetControlButtons();
             characterController?.ResetState();
             
@@ -87,7 +89,8 @@ namespace USEN.Games.Janken
 
         private void OnDisable()
         {
-            Debug.Log("[JankenGameView] OnDisable");
+            BgmManager.Pause();
+            
             characterController?.StopJanken();
             
             bottomPanel.onExitButtonClicked -= OnExitButtonClicked;
@@ -100,8 +103,6 @@ namespace USEN.Games.Janken
 
         private void OnDestroy()
         {
-            Debug.Log("[JankenGameView] OnDestroy");
-            
             if (_isFinalGame)
                 BgmManager.Play(R.Audios.BgmJanken);
         }
