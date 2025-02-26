@@ -47,14 +47,15 @@ namespace USEN.Games.Janken
             Navigator.ShowModal<CircularLoadingIndicator>();
             
             // Load audios
-            await JankenCharacters.DefaultAsset.Load();
-            await spineCharacter.LoadAssetAsync();
-            await Assets.Load("USEN.Games.Common", "Audio");
-            
-            Navigator.PopToRoot();
-            
             var clip = await R.Audios.BgmJanken.Load();
             BgmManager.Play(clip);
+            await Assets.Load("USEN.Games.Common", "Audio");
+            
+            // Load spine assets.
+            await JankenCharacters.DefaultAsset.Load();
+            await spineCharacter.LoadAssetAsync();
+            
+            Navigator.PopToRoot();
         }
 
         private void OnEnable()
