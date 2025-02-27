@@ -140,9 +140,12 @@ namespace USEN.Games.Janken
         
         private async void OnGreenButtonClicked()
         {
+            var currentBgm = BgmManager.CurrentBgm;
+            
             await Navigator.Push<RouletteGameSelectionView>((view) => {
                 view.Category = RouletteManager.Instance.GetCategory("バツゲーム");
                 // BgmManager.Resume();
+                R.Audios.BgmRouletteLoop.PlayAsBgm();
                 
                 if (RoulettePreferences.DisplayMode == RouletteDisplayMode.Random)
                 { 
@@ -151,6 +154,8 @@ namespace USEN.Games.Janken
                     });
                 }
             });
+            
+            BgmManager.Play(currentBgm);
         }
 
         private async void OnYellowButtonClicked()
