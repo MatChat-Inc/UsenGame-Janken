@@ -49,6 +49,7 @@ namespace USEN.Games.Janken
             // Load audios
             var clip = await R.Audios.BgmJanken.Load();
             BgmManager.Play(clip);
+            await R.Audios.BgmJankenFinal.Load();
             await Assets.Load("USEN.Games.Common", "Audio");
             
             // Load spine assets.
