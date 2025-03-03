@@ -51,6 +51,7 @@ namespace USEN.Games.Janken
             BgmManager.Play(clip);
             await R.Audios.BgmJankenFinal.Load();
             await Assets.Load("USEN.Games.Common", "Audio");
+            await Assets.Load("USEN.Games.Roulette", "Audio");
             
             // Load spine assets.
             await JankenCharacters.DefaultAsset.Load();

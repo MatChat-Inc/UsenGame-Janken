@@ -609,6 +609,7 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  characterController: {fileID: 0}
 --- !u!225 &5449331590822972920
 CanvasGroup:
   m_ObjectHideFlags: 0

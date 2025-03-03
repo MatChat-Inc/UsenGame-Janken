@@ -63,16 +63,19 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Roulette
   - m_GUID: f34532dc56bb0a3478c4d3fe01c3d84a
     m_Address: Assets/Game/Roulette/Audios/sfx_roulette_game_rotating.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Roulette
   - m_GUID: 0a2196bba1ff6034b9927dfb6cac43a6
     m_Address: Assets/Game/Roulette/Audios/bgm_roulette_loop.mp3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    - USEN.Games.Roulette
   - m_GUID: 9a521da133e3fbe4d94ce188d13d1194
     m_Address: Assets/Game/Common/Audios/sfx_confirm.mp3
     m_ReadOnly: 0
