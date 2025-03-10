@@ -1,6 +1,7 @@
 // Created by LunarEclipse on 2024-7-21 19:44.
 
 using System;
+using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Luna;
 using Luna.Extensions;
@@ -126,10 +127,11 @@ namespace USEN.Games.Janken
             }
         }
 
-        private void OnRedButtonClicked()
+        private async void OnRedButtonClicked()
         {
             _isFinalGame = true;
             bottomPanel.redButton.gameObject.SetActive(false);
+            await UniTask.Yield(PlayerLoopTiming.PostLateUpdate);
             R.Audios.BgmJankenFinal.Load().Then(BgmManager.Play);
         }
 

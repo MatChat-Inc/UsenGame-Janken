@@ -44,7 +44,7 @@ namespace USEN.Games.Janken
 
             // Show loading indicator before necessary assets are loaded
             await UniTask.Yield(PlayerLoopTiming.PreLateUpdate);
-            Navigator.ShowModal<CircularLoadingIndicator>();
+            Navigator.ShowModal<RoundedCircularLoadingIndicator>();
             
             // Load audios
             var clip = await R.Audios.BgmJanken.Load();
@@ -82,6 +82,9 @@ namespace USEN.Games.Janken
             if (Input.GetKeyDown(KeyCode.Escape) ||
                 Input.GetButtonDown("Cancel")) 
                 OnExitButtonClicked();
+            
+            if (Input.GetKeyDown(KeyCode.Alpha0))
+                Navigator.ShowModal<RoundedCircularLoadingIndicator>();
         }
 
         public void OnStartButtonClicked()
