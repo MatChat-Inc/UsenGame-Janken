@@ -273,6 +273,8 @@ GameObject:
   - component: {fileID: 6275198353537029436}
   - component: {fileID: 2674142673516653920}
   - component: {fileID: 8017552239261323009}
+  - component: {fileID: 7543164014437957912}
+  - component: {fileID: 5909501231685418765}
   m_Layer: 5
   m_Name: RouletteContentList
   m_TagString: Untagged
@@ -506,11 +508,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6105c665a942c5bd61bddc5f07e7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snapMode: 0
   cell: {fileID: 8489434640864021694}
-  snapToCellWhenSelected: 1
   selectFirstCellOnEnable: 0
   selectFirstCellOnReload: 1
   keepSelectionOnReload: 1
+  snapToCellWhenSelected: 1
 --- !u!225 &8017552239261323009
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -523,6 +526,44 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!223 &7543164014437957912
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748343336440590251}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &5909501231685418765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748343336440590251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 55
 --- !u!1 &6607035895371050087
 GameObject:
   m_ObjectHideFlags: 0
