@@ -11,18 +11,21 @@ public class JankenCharacterController : MonoBehaviour
 {
     public event OnStateChangeDelegate OnStateChange;
     
-    private Animator _animator;
     private SkeletonMecanim _skletonMecanim;
     private JankenStateBehaviour _stateBehaviour;
     private AudioSource _audioSource;
 
     private JankenCharacter _character;
     
+    public Animator Animator { get; private set; }
     public JankenCharacterState State { get; private set; } = JankenCharacterState.Idle;
+    
+    public bool Mute { get; set; } = false;
+    public bool NeedComment { get; set; } = true;
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
         _skletonMecanim = GetComponent<SkeletonMecanim>();
         _audioSource = GetComponent<AudioSource>();
     }
@@ -34,7 +37,7 @@ public class JankenCharacterController : MonoBehaviour
 
     private void OnEnable()
     {
-        _stateBehaviour = _animator.GetBehaviour<JankenStateBehaviour>();
+        _stateBehaviour = Animator.GetBehaviour<JankenStateBehaviour>();
         if (_stateBehaviour != null)
             _stateBehaviour.OnAnimationStartEvent += OnAnimationStartEvent;
     }
@@ -48,15 +51,15 @@ public class JankenCharacterController : MonoBehaviour
     public void StartJanken()
     {
         var result = UnityEngine.Random.Range(1, 4);
-        var commentIndex = UnityEngine.Random.Range(0, 10);
-        _animator.SetInteger("Result", result);
-        _animator.SetFloat("Comment", commentIndex);
-        _animator.SetTrigger("Start");
+        var commentIndex = NeedComment ? UnityEngine.Random.Range(0, 10) : -1;
+        Animator.SetInteger("Result", result);
+        Animator.SetFloat("Comment", commentIndex);
+        Animator.SetTrigger("Start");
     }
     
     public void StopJanken()
     {
-        _animator.SetTrigger("Stop");
+        Animator.SetTrigger("Stop");
     }
     
     public void SwitchCharacter(int index)
@@ -69,17 +72,23 @@ public class JankenCharacterController : MonoBehaviour
         var skeleton = _character.skeleton;
         var animator = _character.animator;
         
-        _animator.runtimeAnimatorController = animator;
+        Animator.runtimeAnimatorController = animator;
         if (_stateBehaviour != null)
             _stateBehaviour.OnAnimationStartEvent -= OnAnimationStartEvent;
-        _stateBehaviour = _animator.GetBehaviour<JankenStateBehaviour>();
+        _stateBehaviour = Animator.GetBehaviour<JankenStateBehaviour>();
         _stateBehaviour.OnAnimationStartEvent += OnAnimationStartEvent;
         _skletonMecanim.skeletonDataAsset = skeleton;
         _skletonMecanim.Initialize(true);
     }
     
+    public void JumpTo(string state)
+    {
+        Animator.CrossFade(state, 0.1f);
+    }
+    
     public void Play(AudioClip audioClip)
     {
+        if (Mute) return;
         _audioSource.PlayOneShot(audioClip);
     }
     

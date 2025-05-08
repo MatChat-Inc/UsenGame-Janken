@@ -131,6 +131,7 @@ namespace USEN.Games.Janken
         {
             _isFinalGame = true;
             bottomPanel.redButton.gameObject.SetActive(false);
+            characterController.NeedComment = false;
             await UniTask.Yield(PlayerLoopTiming.PostLateUpdate);
             R.Audios.BgmJankenFinal.Load().Then(BgmManager.Play);
         }
