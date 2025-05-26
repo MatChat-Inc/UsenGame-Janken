@@ -123,6 +123,8 @@ namespace USEN.Games.Janken
                     bottomPanel.confirmButton.gameObject.SetActive(false);
                     confirmText.text = "もう一度じゃんけんをする";
                     HideControlButtons();
+                    if (!_isFinalGame)
+                        bottomPanel.redButton.gameObject.SetActive(false);
                     break;
             }
         }
@@ -170,8 +172,8 @@ namespace USEN.Games.Janken
         
         private void ShowControlButtons()
         {
-            if (_playTimes >= 1) 
-                bottomPanel.redButton.gameObject.SetActive(!_isFinalGame);
+            // if (_playTimes >= 1) 
+            //     bottomPanel.redButton.gameObject.SetActive(!_isFinalGame);
             bottomPanel.greenButton.gameObject.SetActive(true);
             bottomPanel.yellowButton.gameObject.SetActive(true);
         }
@@ -185,6 +187,8 @@ namespace USEN.Games.Janken
         private void ResetControlButtons()
         {
             bottomPanel.confirmButton.gameObject.SetActive(true);
+            if (!_isFinalGame)
+                bottomPanel.redButton.gameObject.SetActive(true);
         }
         
         private void PopupConfirmView()
