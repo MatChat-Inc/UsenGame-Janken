@@ -101,7 +101,10 @@ namespace USEN.Games.Janken
         
         private void OnExitButtonClicked()
         {
-            Application.Quit();
+#if UNITY_ANDROID
+            // Android.Back();
+#endif
+            Application.Quit(); 
         }
         
         private void OnBlueButtonClicked()
