@@ -21,9 +21,9 @@ jobs:
           - name: Linux
             system: "ubuntu-latest"
             target: "StandaloneLinux64"
-          #          - name: Web
-          #            system: "ubuntu-latest"
-          #            target: "WebGL"
+#          - name: Web
+#            system: "ubuntu-latest"
+#            target: "WebGL"
           - name: Android
             system: "ubuntu-latest"
             target: "Android"
@@ -31,9 +31,9 @@ jobs:
             system: "ubuntu-latest"
             target: "Android"
             debug: true
-    #          - name: iOS
-    #            system: "macos-latest"
-    #            target: "iOS"
+#          - name: iOS
+#            system: "macos-latest"
+#            target: "iOS"
     steps:
       # Get repository name
       - name: get-name

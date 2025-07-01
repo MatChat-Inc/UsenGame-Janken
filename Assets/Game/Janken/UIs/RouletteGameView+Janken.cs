@@ -1,5 +1,6 @@
 ﻿using Luna;
 using Luna.UI.Navigation;
+using UnityEngine;
 using USEN.Games.Common;
 using USEN.Games.Janken;
 
@@ -14,11 +15,12 @@ namespace USEN.Games.Roulette
                 {
                     popup.onOption1 = () => Navigator.Pop();
                     popup.onOption2 = () => Navigator.PopUntil<JankenGameView>();
-#if UNITY_ANDROID
-                    popup.onOption3 = () => Android.Back();
-#else
                     popup.onOption3 = () => Application.Quit();
-#endif
+// #if UNITY_ANDROID
+//                     popup.onOption3 = () => Android.Back();
+// #else
+//                     popup.onOption3 = () => Application.Quit();
+// #endif
                 });
         }
     }
