@@ -205,7 +205,8 @@ namespace USEN.Games.Janken
                         Navigator.PopToRoot();
                     }; 
 #if UNITY_ANDROID
-                    popup.onOption3 = () => Android.Back();
+                    // popup.onOption3 = () => Android.Back();
+                    popup.onOption3 = () => Application.Quit();
 #else
                     popup.onOption3 = () => Application.Quit();
 #endif

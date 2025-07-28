@@ -1,5 +1,6 @@
 // Created by LunarEclipse on 2024-6-21 1:53.
 
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
@@ -34,6 +35,8 @@ namespace USEN.Games.Janken
 
         private async void Start()
         {
+            UsenEvents.OnRemoconHomeButtonClicked += OnHomeButtonClicked;
+            
             startButton.onClick.AddListener(OnStartButtonClicked);
             settingsButton.onClick.AddListener(OnSettingsButtonClicked);
             bottomPanel.exitButton.onClick.AddListener(OnExitButtonClicked);
@@ -110,6 +113,11 @@ namespace USEN.Games.Janken
         private void OnBlueButtonClicked()
         {
             Navigator.Push<JankenCharacterView>();
+        }
+        
+        private void OnHomeButtonClicked(object sender, EventArgs e)
+        {
+            Application.Quit();
         }
     }
 }
