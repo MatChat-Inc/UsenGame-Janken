@@ -57,7 +57,7 @@ jobs:
         with:
           path: Library
           key: Library-${{ matrix.platform.name }}
-      #          restore-keys: Library-${{ matrix.platform.target }}
+          restore-keys: Library-
 
       # Pre-processor symbols
       - name: Apply csc.rsp (pre-processor symbols)
