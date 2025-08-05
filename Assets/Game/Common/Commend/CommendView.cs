@@ -32,10 +32,14 @@ namespace USEN.Games.Common
              
             videoPlayer.targetCamera = Camera.main;
             
+            Debug.Log($"Playing commendation video at index: {index} of {videoClips.Count}");
+            
             if (index < videoClips.Count)
             {
                 videoPlayer.clip = videoClips[index];
                 videoPlayer.Prepare();
+                
+                Debug.Log($"Preparing video: {videoClips[index].name}");
             }
             
             videoPlayer.prepareCompleted += OnVideoPrepared;
