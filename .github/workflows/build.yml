@@ -25,10 +25,10 @@ jobs:
 #            system: "ubuntu-latest"
 #            target: "WebGL"
           - name: Android
-            system: "windows-latest"
+            system: "ubuntu-latest"
             target: "Android"
           - name: Android-Debug
-            system: "windows-latest"
+            system: "ubuntu-latest"
             target: "Android"
             debug: true
             parameters: "-development"
@@ -38,17 +38,19 @@ jobs:
     steps:
       # Get repository name
       - name: get-name
-        shell: pwsh
         run: |
-          $repoName = "${{ github.repository }}".Split("/")[1]
-          "REPO_NAME=$repoName" | Out-File -FilePath $env:GITHUB_ENV -Append
-
+          echo "REPO_NAME=$(basename ${{ github.repository }})" >> $GITHUB_ENV
+      
       # Checkout
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           lfs: true
           submodules: recursive
+
+      # Free disk space
+#      - if: matrix.platform.target == 'Android' || matrix.platform.target == 'WebGL'
+#        uses: jlumbroso/free-disk-space@v1.3.1
 
       # Cache
       - uses: actions/cache@v4
@@ -60,14 +62,13 @@ jobs:
       # Pre-processor symbols
       - name: Apply csc.rsp (pre-processor symbols)
         if: matrix.platform.debug == true
-        shell: pwsh
-        run: |
-          ' -define:DEBUG' | Out-File -FilePath "Assets\csc.rsp" -Append
+        run: echo -define:DEBUG >> Assets/csc.rsp
 
       # Build
       - uses: game-ci/unity-builder@v4
         env:
           UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+          # UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
@@ -83,16 +84,12 @@ jobs:
 
       # Compress
       - name: Compress directory as zip
-        shell: pwsh
         run: |
-          $zipPath = "build\${{ matrix.platform.name }}.zip"
-          $sourcePath = "build\${{ matrix.platform.target }}"
-          Compress-Archive -Path "$sourcePath\*" -DestinationPath $zipPath
+          cd build/${{ matrix.platform.target }}
+          sudo zip -r ../${{ matrix.platform.name }}.zip *
 
       - name: Display structure of build files
-        shell: pwsh
-        run: |
-          Get-ChildItem -Recurse "C:\Users\runneradmin\work"
+        run: ls -R /home/runner/work/
 
       # Output
       - name : Upload Artifact
