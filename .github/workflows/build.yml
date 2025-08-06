@@ -59,6 +59,15 @@ jobs:
           key: Library-${{ matrix.platform.name }}
           restore-keys: Library-
 
+      # Process cache
+      #   - delete: Library/Bee
+      - name: Process cache
+        run: |
+          if [ -d "Library/Bee" ]; then
+            echo "Deleting Library/Bee directory to avoid cache issues"
+            rm -rf Library/Bee
+          fi
+
       # Pre-processor symbols
       - name: Apply csc.rsp (pre-processor symbols)
         if: matrix.platform.debug == true
