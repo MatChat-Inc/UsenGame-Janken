@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.8C24D059" = "p: dir=\"CC0 Sounds\" "
+	"last_search.8C24D059" = "CircularLoadingIndicator"
 	"OpenInspectorPreview.8C24D059" = "0"
 	"currentGroup.8C24D059" = "asset"
 }
@@ -76,6 +76,11 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"CircularLoadingIndicator"
+	"8ec0a83430e5cb148ba772f359fc7b7c"
+	"dfe4fd46c0968c846a7169f672e0399b"
+	"1fa5b2096ea86fb4cb3ed408e0ca9bc6"
+	"73a30b66f6e3cb04da5ac2d26400f5c0"
 ]
 searchItemFavorites = [
 ]
